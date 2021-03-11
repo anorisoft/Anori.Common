@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Anori.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:Anori.Extensions.EnumerableExtensions">
+            <summary>
+                Enumerable Extensions.
+            </summary>
+        </member>
+        <member name="M:Anori.Extensions.EnumerableExtensions.ValueAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+                Values at or null.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>
+                The value or null.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">Source is null.</exception>
+        </member>
+        <member name="M:Anori.Extensions.EnumerableExtensions.ReferenceAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+                References at or null.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>
+                The value or null.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+        </member>
+        <member name="T:Anori.Extensions.ListExtensions">
+            <summary>
+                List Extensions.
+            </summary>
+        </member>
+        <member name="M:Anori.Extensions.ListExtensions.ValueAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
+            <summary>
+                Values at or null.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>The value or null.</returns>
+            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+        </member>
+        <member name="M:Anori.Extensions.ListExtensions.ReferenceAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
+            <summary>
+                References at or null.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>
+                The value or null.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+        </member>
+        <member name="T:Anori.Extensions.ReferenceTypeExtensions">
+            <summary>
+                Reference Type Extensions.
+            </summary>
+        </member>
+        <member name="M:Anori.Extensions.ReferenceTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+                Elements at or null.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>
+                Result of ElementAtOrNull as TSource.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+        </member>
+        <member name="M:Anori.Extensions.ReferenceTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
+            <summary>
+            Elements at or null.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>
+            Result of ElementAtOrNull as TSource.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+        </member>
+        <member name="M:Anori.Extensions.ReferenceTypeExtensions.GetValueOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
+            <summary>
+            Gets the value or null.
+            </summary>
+            <typeparam name="TKey">The type of the key.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="dictionary">The dictionary.</param>
+            <param name="key">The key.</param>
+            <returns>
+            Result of GetValueOrNull as TValue.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">dictionary is null.</exception>
+        </member>
+        <member name="M:Anori.Extensions.ReferenceTypeExtensions.CurrentFromEnumerator``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+                Currents from enumerator.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>
+                Result of CurrentFromEnumerator as Nullable&lt;TSource&gt;.
+            </returns>
+        </member>
+        <member name="T:Anori.Extensions.TypeExtensions">
+            <summary>
+            Type Extensions.
+            </summary>
+        </member>
+        <member name="M:Anori.Extensions.TypeExtensions.IsNullable(System.Reflection.TypeInfo)">
+            <summary>
+                Determines whether this instance is nullable.
+            </summary>
+            <param name="genericTypeInfo">The generic type information.</param>
+            <returns>
+                <c>true</c> if the specified generic type information is nullable; otherwise, <c>false</c>.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">genericTypeInfo is null.</exception>
+        </member>
+        <member name="M:Anori.Extensions.TypeExtensions.IsNullable(System.Type)">
+            <summary>
+                Determines whether this instance is nullable.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>
+                <c>true</c> if the specified type is nullable; otherwise, <c>false</c>.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">type is null.</exception>
+        </member>
+        <member name="M:Anori.Extensions.TypeExtensions.IsNullable``1">
+            <summary>
+                Determines whether this instance is nullable.
+            </summary>
+            <typeparam name="T">Type.</typeparam>
+            <returns>
+                <c>true</c> if this instance is nullable; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:Anori.Extensions.ValueTypeExtensions">
+            <summary>
+                ValueType Extensions.
+            </summary>
+        </member>
+        <member name="M:Anori.Extensions.ValueTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            Elements at or null.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>
+            Result of ElementAtOrNull as Nullable{TSource}.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+        </member>
+        <member name="M:Anori.Extensions.ValueTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
+            <summary>
+                Get element at index or is no element return null.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>
+                Result of ElementAtOrNull as Nullable{TSource}.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+        </member>
+        <member name="M:Anori.Extensions.ValueTypeExtensions.GetValueOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
+            <summary>
+            Gets the value or null.
+            </summary>
+            <typeparam name="TKey">The type of the key.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="dictionary">The dictionary.</param>
+            <param name="key">The key.</param>
+            <returns>
+            Result of GetValueOrNull as Nullable{TValue};.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">dictionary is null.</exception>
+        </member>
+        <member name="M:Anori.Extensions.ValueTypeExtensions.CurrentFromEnumerator``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+                Currents from enumerator.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="source">The source.</param>
+            <param name="index">The index.</param>
+            <returns>
+                Result of CurrentFromEnumerator as Nullable&lt;TSource&gt;.
+            </returns>
+        </member>
+    </members>
+</doc>
