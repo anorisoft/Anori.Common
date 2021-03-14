@@ -6,46 +6,46 @@
 
 namespace Anori.Common
 {
-    using JetBrains.Annotations;
     using System;
     using System.Runtime.CompilerServices;
     using System.Runtime.InteropServices;
 
+    using JetBrains.Annotations;
+
     /// <summary>
-    /// ResetLazy.
+    ///     ResetLazy.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="T">The type.</typeparam>
     [ComVisible(false)]
     //[HostProtection(Action = SecurityAction.LinkDemand,
     //    Resources = HostProtectionResource.Synchronization | HostProtectionResource.SharedState)]
-
     public class ResetLazy<T>
     {
         /// <summary>
-        /// The box.
+        ///     The mode.
+        /// </summary>
+        private readonly LazyThreadSafetyMode mode;
+
+        /// <summary>
+        ///     The box.
         /// </summary>
         [CanBeNull]
         private volatile Box box;
 
         /// <summary>
-        /// The mode.
-        /// </summary>
-        private LazyThreadSafetyMode mode;
-
-        /// <summary>
-        /// The synchronize lock.
+        ///     The synchronize lock.
         /// </summary>
         [NotNull]
         private object syncLock = new object();
 
         /// <summary>
-        /// The value factory.
+        ///     The value factory.
         /// </summary>
         [NotNull]
         private Func<T> valueFactory;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ResetLazy{T}"/> class.
+        ///     Initializes a new instance of the <see cref="ResetLazy{T}" /> class.
         /// </summary>
         /// <param name="valueFactory">The value factory.</param>
         /// <param name="mode">The mode.</param>
@@ -98,6 +98,7 @@ namespace Anori.Common
                             {
                                 return b1.Value;
                             }
+
                             lock (this.syncLock)
                             {
                                 var b2 = this.box;
@@ -119,6 +120,7 @@ namespace Anori.Common
                             {
                                 return b1.Value;
                             }
+
                             var newValue = this.valueFactory();
 
                             lock (this.syncLock)
@@ -152,10 +154,10 @@ namespace Anori.Common
         }
 
         /// <summary>
-        /// Gets a value indicating whether this instance is value created.
+        ///     Gets a value indicating whether this instance is value created.
         /// </summary>
         /// <value>
-        ///   <c>true</c> if this instance is value created; otherwise, <c>false</c>.
+        ///     <c>true</c> if this instance is value created; otherwise, <c>false</c>.
         /// </value>
         public bool IsValueCreated
         {
@@ -164,22 +166,22 @@ namespace Anori.Common
         }
 
         /// <summary>
-        /// Gets the type of the declaring.
+        ///     Gets the type of the declaring.
         /// </summary>
         /// <value>
-        /// The type of the declaring.
+        ///     The type of the declaring.
         /// </value>
         [NotNull]
         public Type DeclaringType { get; }
 
         /// <summary>
-        /// Loads this instance.
+        ///     Loads this instance.
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void Load() => _ = this.Value;
 
         /// <summary>
-        /// Resets this instance.
+        ///     Resets this instance.
         /// </summary>
         public void Reset()
         {
@@ -198,18 +200,18 @@ namespace Anori.Common
         }
 
         /// <summary>
-        /// The Box.
+        ///     The Box.
         /// </summary>
         private class Box
         {
             /// <summary>
-            /// The value.
+            ///     The value.
             /// </summary>
             [CanBeNull]
             public readonly T Value;
 
             /// <summary>
-            /// Initializes a new instance of the <see cref="Box"/> class.
+            ///     Initializes a new instance of the <see cref="Box" /> class.
             /// </summary>
             /// <param name="value">The value.</param>
             public Box([CanBeNull] T value) => this.Value = value;

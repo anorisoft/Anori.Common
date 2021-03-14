@@ -4,7 +4,7 @@
     <LangVersion>8.0</LangVersion>
     <Configurations>Debug;Release;Debug Submodules;Release Submodules</Configurations>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>Anorisoft.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\Anorisoft.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
     <PackageIcon>Anorisoft.png</PackageIcon>
     <Description>AnoriSoft Extensions</Description>
