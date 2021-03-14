@@ -198,7 +198,6 @@ namespace Anori.Common
                 this.box = null;
             }
         }
-
         /// <summary>
         ///     The Box.
         /// </summary>
