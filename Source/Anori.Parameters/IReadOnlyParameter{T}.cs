@@ -8,6 +8,8 @@ namespace Anori.Parameters
 {
     using System;
 
+    using Anori.Common;
+
     /// <summary>
     /// The I Read Only Parameter interface.
     /// </summary>

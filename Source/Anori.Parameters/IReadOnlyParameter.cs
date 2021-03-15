@@ -6,6 +6,7 @@
 
 namespace Anori.Parameters
 {
+    using Anori.Common;
     using System;
 
     /// <summary>
