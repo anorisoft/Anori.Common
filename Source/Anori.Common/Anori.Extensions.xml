@@ -151,16 +151,16 @@
             <summary>
                 ResetLazy.
             </summary>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="F:Anori.Common.ResetLazy`1.box">
-            <summary>
-                The box.
-            </summary>
+            <typeparam name="T">The type.</typeparam>
         </member>
         <member name="F:Anori.Common.ResetLazy`1.mode">
             <summary>
                 The mode.
+            </summary>
+        </member>
+        <member name="F:Anori.Common.ResetLazy`1.box">
+            <summary>
+                The box.
             </summary>
         </member>
         <member name="F:Anori.Common.ResetLazy`1.syncLock">
@@ -206,6 +206,16 @@
                 The type of the declaring.
             </value>
         </member>
+        <member name="M:Anori.Common.ResetLazy`1.Load">
+            <summary>
+                Loads this instance.
+            </summary>
+        </member>
+        <member name="M:Anori.Common.ResetLazy`1.Reset">
+            <summary>
+                Resets this instance.
+            </summary>
+        </member>
         <member name="T:Anori.Common.ResetLazy`1.Box">
             <summary>
                 The Box.
@@ -221,16 +231,6 @@
                 Initializes a new instance of the <see cref="T:Anori.Common.ResetLazy`1.Box" /> class.
             </summary>
             <param name="value">The value.</param>
-        </member>
-        <member name="M:Anori.Common.ResetLazy`1.Load">
-            <summary>
-                Loads this instance.
-            </summary>
-        </member>
-        <member name="M:Anori.Common.ResetLazy`1.Reset">
-            <summary>
-                Resets this instance.
-            </summary>
         </member>
     </members>
 </doc>
