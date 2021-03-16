@@ -7,11 +7,8 @@
 namespace Anori.Parameters
 {
     /// <summary>
-    /// The I Parameter interface.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    /// <seealso cref="Anori.Parameters.IReadOnlyParameter{T}" />
-    /// <seealso cref="Anori.Parameters.IParameter" />
     /// <seealso cref="IReadOnlyParameter{T}" />
     /// <seealso cref="IParameter" />
     public interface IParameter<T> : IReadOnlyParameter<T>, IParameter

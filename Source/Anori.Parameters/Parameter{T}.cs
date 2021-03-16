@@ -90,7 +90,7 @@ namespace Anori.Parameters
         }
 
         /// <summary>
-        /// Called when [value changed].
+        ///     Called when [value changed].
         /// </summary>
         /// <param name="value">The value.</param>
         protected virtual void OnValueChanged(T value)
