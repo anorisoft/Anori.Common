@@ -1,5 +1,5 @@
-# Anori.Extensions
-Collection of commen extensions.
+# Anori.Common
+Collection of commen Classes.
 
 Anori.Extensions contains various extensions for specific system types of C#. They simplified and extended usage of the types.
 
