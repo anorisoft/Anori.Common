@@ -9,6 +9,7 @@ namespace Anori.Common
     using System;
     using System.Runtime.CompilerServices;
     using System.Runtime.InteropServices;
+    using System.Security.Permissions;
 
     using JetBrains.Annotations;
 
@@ -29,8 +30,7 @@ namespace Anori.Common
         /// <summary>
         ///     The box.
         /// </summary>
-        [CanBeNull]
-        private volatile Box box;
+        private volatile Box? box;
 
         /// <summary>
         ///     The synchronize lock.
@@ -45,16 +45,16 @@ namespace Anori.Common
         private Func<T> valueFactory;
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="ResetLazy{T}" /> class.
+        /// Initializes a new instance of the <see cref="ResetLazy{T}" /> class.
         /// </summary>
         /// <param name="valueFactory">The value factory.</param>
         /// <param name="mode">The mode.</param>
         /// <param name="declaringType">Type of the declaring.</param>
-        /// <exception cref="ArgumentNullException">valueFactory</exception>
+        /// <exception cref="ArgumentNullException">valueFactory is null.</exception>
         public ResetLazy(
             [NotNull] Func<T> valueFactory,
             LazyThreadSafetyMode mode = LazyThreadSafetyMode.PublicationOnly,
-            [CanBeNull] Type declaringType = null)
+            Type? declaringType = null)
         {
             this.mode = mode;
             this.valueFactory = valueFactory ?? throw new ArgumentNullException(nameof(valueFactory));
@@ -82,7 +82,7 @@ namespace Anori.Common
                                 var b2 = this.box;
                                 if (b2 != null)
                                 {
-                                    return this.box.Value;
+                                    return b2.Value;
                                 }
 
                                 this.box = new Box(this.valueFactory());
@@ -104,7 +104,7 @@ namespace Anori.Common
                                 var b2 = this.box;
                                 if (b2 != null)
                                 {
-                                    return this.box.Value;
+                                    return b2.Value;
                                 }
 
                                 this.box = new Box(this.valueFactory());
@@ -128,7 +128,7 @@ namespace Anori.Common
                                 var b2 = this.box;
                                 if (b2 != null)
                                 {
-                                    return this.box.Value;
+                                    return b2.Value;
                                 }
 
                                 this.box = new Box(newValue);
@@ -171,8 +171,7 @@ namespace Anori.Common
         /// <value>
         ///     The type of the declaring.
         /// </value>
-        [NotNull]
-        public Type DeclaringType { get; }
+        public Type? DeclaringType { get; }
 
         /// <summary>
         ///     Loads this instance.
@@ -198,6 +197,7 @@ namespace Anori.Common
                 this.box = null;
             }
         }
+
         /// <summary>
         ///     The Box.
         /// </summary>

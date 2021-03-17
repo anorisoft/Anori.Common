@@ -147,6 +147,29 @@
             </summary>
             <value><see langword="true" /> if the object is active; otherwise <see langword="false" />.</value>
         </member>
+        <member name="T:Anori.Common.LazyThreadSafetyMode">
+            <summary>
+            Specifies how a System.Lazy`1 instance synchronizes access among multiple threads.
+            </summary>
+        </member>
+        <member name="F:Anori.Common.LazyThreadSafetyMode.PublicationOnly">
+            <summary>
+                When multiple threads try to initialize a System.Lazy`1 instance simultaneously,
+                all threads are allowed to run the initialization method (or the default constructor,
+                if there is no initialization method). The first thread to complete initialization
+                sets the value of the System.Lazy`1 instance. That value is returned to any other
+                threads that were simultaneously running the initialization method, unless the
+                initialization method throws exceptions on those threads. Any instances of T
+                that were created by the competing threads are discarded. If the initialization
+                method throws an exception on any thread, the exception is propagated out of
+                the System.Lazy`1.Value property on that thread. The exception is not cached.
+                The value of the System.Lazy`1.IsValueCreated property remains false, and subsequent
+                calls to the System.Lazy`1.Value property, either by the thread where the exception
+                was thrown or by other threads, cause the initialization method to run again.
+                If the initialization method recursively accesses the System.Lazy`1.Value property
+                of the System.Lazy`1 instance, no exception is thrown.
+            </summary>
+        </member>
         <member name="T:Anori.Common.ResetLazy`1">
             <summary>
                 ResetLazy.
@@ -175,12 +198,12 @@
         </member>
         <member name="M:Anori.Common.ResetLazy`1.#ctor(System.Func{`0},Anori.Common.LazyThreadSafetyMode,System.Type)">
             <summary>
-                Initializes a new instance of the <see cref="T:Anori.Common.ResetLazy`1" /> class.
+            Initializes a new instance of the <see cref="T:Anori.Common.ResetLazy`1" /> class.
             </summary>
             <param name="valueFactory">The value factory.</param>
             <param name="mode">The mode.</param>
             <param name="declaringType">Type of the declaring.</param>
-            <exception cref="T:System.ArgumentNullException">valueFactory</exception>
+            <exception cref="T:System.ArgumentNullException">valueFactory is null.</exception>
         </member>
         <member name="P:Anori.Common.ResetLazy`1.Value">
             <summary>

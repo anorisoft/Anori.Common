@@ -89,16 +89,16 @@
             </returns>
             <exception cref="T:System.ArgumentNullException">source is null.</exception>
         </member>
-        <member name="M:Anori.Extensions.ReferenceTypeExtensions.GetValueOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
+        <member name="M:Anori.Extensions.ReferenceTypeExtensions.GeTResultOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
             <summary>
             Gets the value or null.
             </summary>
             <typeparam name="TKey">The type of the key.</typeparam>
-            <typeparam name="TValue">The type of the value.</typeparam>
+            <typeparam name="TResult">The type of the value.</typeparam>
             <param name="dictionary">The dictionary.</param>
             <param name="key">The key.</param>
             <returns>
-            Result of GetValueOrNull as TValue.
+            Result of GeTResultOrNull as TResult.
             </returns>
             <exception cref="T:System.ArgumentNullException">dictionary is null.</exception>
         </member>
@@ -176,16 +176,16 @@
             </returns>
             <exception cref="T:System.ArgumentNullException">source is null.</exception>
         </member>
-        <member name="M:Anori.Extensions.ValueTypeExtensions.GetValueOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
+        <member name="M:Anori.Extensions.ValueTypeExtensions.GeTResultOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
             <summary>
             Gets the value or null.
             </summary>
             <typeparam name="TKey">The type of the key.</typeparam>
-            <typeparam name="TValue">The type of the value.</typeparam>
+            <typeparam name="TResult">The type of the value.</typeparam>
             <param name="dictionary">The dictionary.</param>
             <param name="key">The key.</param>
             <returns>
-            Result of GetValueOrNull as Nullable{TValue};.
+            Result of GeTResultOrNull as Nullable{TResult};.
             </returns>
             <exception cref="T:System.ArgumentNullException">dictionary is null.</exception>
         </member>

@@ -6,12 +6,9 @@
 
 namespace Anori.Common
 {
-    using System.Runtime.InteropServices;
-
-   
-    //
-    // Summary:
-    //     Specifies how a System.Lazy`1 instance synchronizes access among multiple threads.
+    /// <summary>
+    /// Specifies how a System.Lazy`1 instance synchronizes access among multiple threads.
+    /// </summary>
     public enum LazyThreadSafetyMode
     {
         //
@@ -31,23 +28,25 @@ namespace Anori.Common
         //     property of the System.Lazy`1 instance, an System.InvalidOperationException is
         //     thrown.
         None = 0,
-        //
-        // Summary:
-        //     When multiple threads try to initialize a System.Lazy`1 instance simultaneously,
-        //     all threads are allowed to run the initialization method (or the default constructor,
-        //     if there is no initialization method). The first thread to complete initialization
-        //     sets the value of the System.Lazy`1 instance. That value is returned to any other
-        //     threads that were simultaneously running the initialization method, unless the
-        //     initialization method throws exceptions on those threads. Any instances of T
-        //     that were created by the competing threads are discarded. If the initialization
-        //     method throws an exception on any thread, the exception is propagated out of
-        //     the System.Lazy`1.Value property on that thread. The exception is not cached.
-        //     The value of the System.Lazy`1.IsValueCreated property remains false, and subsequent
-        //     calls to the System.Lazy`1.Value property, either by the thread where the exception
-        //     was thrown or by other threads, cause the initialization method to run again.
-        //     If the initialization method recursively accesses the System.Lazy`1.Value property
-        //     of the System.Lazy`1 instance, no exception is thrown.
+
+        /// <summary>
+        ///     When multiple threads try to initialize a System.Lazy`1 instance simultaneously,
+        ///     all threads are allowed to run the initialization method (or the default constructor,
+        ///     if there is no initialization method). The first thread to complete initialization
+        ///     sets the value of the System.Lazy`1 instance. That value is returned to any other
+        ///     threads that were simultaneously running the initialization method, unless the
+        ///     initialization method throws exceptions on those threads. Any instances of T
+        ///     that were created by the competing threads are discarded. If the initialization
+        ///     method throws an exception on any thread, the exception is propagated out of
+        ///     the System.Lazy`1.Value property on that thread. The exception is not cached.
+        ///     The value of the System.Lazy`1.IsValueCreated property remains false, and subsequent
+        ///     calls to the System.Lazy`1.Value property, either by the thread where the exception
+        ///     was thrown or by other threads, cause the initialization method to run again.
+        ///     If the initialization method recursively accesses the System.Lazy`1.Value property
+        ///     of the System.Lazy`1 instance, no exception is thrown.
+        /// </summary>
         PublicationOnly = 1,
+
         //
         // Summary:
         //     Locks are used to ensure that only a single thread can initialize a System.Lazy`1
@@ -65,7 +64,7 @@ namespace Anori.Common
         //     property of the System.Lazy`1 instance, an System.InvalidOperationException is
         //     thrown.
         ExecutionAndPublication = 2,
-        Full = 3
 
+        Full = 3
     }
 }
