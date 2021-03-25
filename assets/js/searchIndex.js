@@ -39,6 +39,20 @@ var searchModule = function() {
     a(
         {
             id:0,
+            title:"ResetLazy",
+            content:"ResetLazy",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
+            title:"ResetLazy<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:1,
             title:"IActivatable",
             content:"IActivatable",
             description:'',
@@ -52,7 +66,7 @@ var searchModule = function() {
     );
     a(
         {
-            id:1,
+            id:2,
             title:"IActivatable",
             content:"IActivatable",
             description:'',
@@ -61,20 +75,6 @@ var searchModule = function() {
         {
             url:'/Anori.Common/api/Anori.Common/IActivatable',
             title:"IActivatable",
-            description:""
-        }
-    );
-    a(
-        {
-            id:2,
-            title:"ResetLazy",
-            content:"ResetLazy",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
-            title:"ResetLazy<T>",
             description:""
         }
     );
@@ -95,14 +95,14 @@ var searchModule = function() {
     a(
         {
             id:4,
-            title:"LazyThreadSafetyMode",
-            content:"LazyThreadSafetyMode",
+            title:"IActivated",
+            content:"IActivated",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/LazyThreadSafetyMode',
-            title:"LazyThreadSafetyMode",
+            url:'/Anori.Common/api/Anori.Common/IActivated',
+            title:"IActivated",
             description:""
         }
     );
@@ -137,14 +137,14 @@ var searchModule = function() {
     a(
         {
             id:7,
-            title:"IActivated",
-            content:"IActivated",
+            title:"LazyThreadSafetyMode",
+            content:"LazyThreadSafetyMode",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/IActivated',
-            title:"IActivated",
+            url:'/Anori.Common/api/Anori.Common/LazyThreadSafetyMode',
+            title:"LazyThreadSafetyMode",
             description:""
         }
     );
