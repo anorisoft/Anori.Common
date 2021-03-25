@@ -18,8 +18,8 @@ namespace Anori.Common
     /// </summary>
     /// <typeparam name="T">The type.</typeparam>
     [ComVisible(false)]
-    //[HostProtection(Action = SecurityAction.LinkDemand,
-    //    Resources = HostProtectionResource.Synchronization | HostProtectionResource.SharedState)]
+    [HostProtection(Action = SecurityAction.LinkDemand,
+        Resources = HostProtectionResource.Synchronization | HostProtectionResource.SharedState)]
     public class ResetLazy<T>
     {
         /// <summary>
@@ -207,7 +207,9 @@ namespace Anori.Common
             ///     The value.
             /// </summary>
             [CanBeNull]
+#pragma warning disable SA1401 // Fields should be private
             public readonly T Value;
+#pragma warning restore SA1401 // Fields should be private
 
             /// <summary>
             ///     Initializes a new instance of the <see cref="Box" /> class.
