@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<id>http://anorisoft.github.io/Anori.Common</id>
+	<title>Anori.Common</title>
+	<link rel="self" href="http://anorisoft.github.io/Anori.Common" />
+	<rights>2021</rights>
+	<updated>2021-03-25T17:43:37Z</updated>
+</feed>
