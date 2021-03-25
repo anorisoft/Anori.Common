@@ -39,28 +39,28 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"EventArgs",
-            content:"EventArgs",
+            title:"IActivatable",
+            content:"IActivatable",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/EventArgs_1',
-            title:"EventArgs<T>",
+            url:'/Anori.Common/api/Anori.Common/IActivatable',
+            title:"IActivatable",
             description:""
         }
     );
     a(
         {
             id:1,
-            title:"ActivatableObservableCollection",
-            content:"ActivatableObservableCollection",
+            title:"IActivated",
+            content:"IActivated",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection_1',
-            title:"ActivatableObservableCollection<T>",
+            url:'/Anori.Common/api/Anori.Common/IActivated',
+            title:"IActivated",
             description:""
         }
     );
@@ -81,34 +81,20 @@ var searchModule = function() {
     a(
         {
             id:3,
-            title:"IActivated",
-            content:"IActivated",
+            title:"ActivatableObservableCollection",
+            content:"ActivatableObservableCollection",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/IActivated',
-            title:"IActivated",
+            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection_1',
+            title:"ActivatableObservableCollection<T>",
             description:""
         }
     );
     a(
         {
             id:4,
-            title:"ResetLazy",
-            content:"ResetLazy",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
-            title:"ResetLazy<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:5,
             title:"IActivatable",
             content:"IActivatable",
             description:'',
@@ -122,15 +108,29 @@ var searchModule = function() {
     );
     a(
         {
-            id:6,
-            title:"IActivatable",
-            content:"IActivatable",
+            id:5,
+            title:"EventArgs",
+            content:"EventArgs",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/IActivatable',
-            title:"IActivatable",
+            url:'/Anori.Common/api/Anori.Common/EventArgs_1',
+            title:"EventArgs<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
+            title:"ResetLazy",
+            content:"ResetLazy",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
+            title:"ResetLazy<T>",
             description:""
         }
     );
