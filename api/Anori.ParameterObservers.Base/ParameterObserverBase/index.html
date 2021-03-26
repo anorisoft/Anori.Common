@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Anori.Parameters/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Anori.Parameters/assets/img/favicon.ico" type="image/x-icon">
-        <title>Anori.Parameters - API - Anori Namespace</title>
+        <title>Anori.Parameters - API - ParameterObserverBase Class</title>
         <link href="/Anori.Parameters/assets/css/highlight.css" rel="stylesheet">
         <link href="/Anori.Parameters/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/Anori.Parameters/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -70,7 +70,12 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Namespaces">Namespaces</a></p>
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
+<p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Properties">Properties</a></p>
+<p><a href="#Methods">Methods</a></p>
+<p><a href="#Operators">Operators</a></p>
+<p><a href="#SeeAlso">See Also</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -129,25 +134,15 @@
 
                     <ul class="sidebar-menu">
                         
-	<li class="header">Namespaces</li>   
+			<li class="header">Namespace</li>
+		<li><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base">Anori<wbr>.ParameterObservers<wbr>.Base</a></li>
+		<li role="separator" class="divider"></li>
+			<li class="header">Class Types</li>
+				<li class="selected"><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase">Parameter<wbr>Observer<wbr>Base</a></li>
+				<li><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase_3">Parameter<wbr>Observer<wbr>Base<wbr>&lt;TSelf, <wbr>TParameter1, <wbr>TResult&gt;<wbr></a></li>
+				<li><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase_1">Parameter<wbr>Observer<wbr>Base<wbr>&lt;TSelf&gt;<wbr></a></li>
+				<li><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase_2">Parameter<wbr>Observer<wbr>Base<wbr>&lt;TSelf, <wbr>TResult&gt;<wbr></a></li>
 
-				<li class="treeview active selected">
-				<a href="/Anori.Parameters/api/Anori">Anori</a> <a href="#" class="expand"></a>
-				<ul class="treeview-menu">
-			
-				<li class="treeview">
-				<a href="/Anori.Parameters/api/Anori.ParameterObservers">Anori<wbr>.ParameterObservers</a> <a href="#" class="expand"></a>
-				<ul class="treeview-menu">
-						<li><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base">Anori<wbr>.ParameterObservers<wbr>.Base</a></li>
-			<li><a href="/Anori.Parameters/api/Anori.ParameterObservers.Observers">Anori<wbr>.ParameterObservers<wbr>.Observers</a></li>
-
-				<li class="treeview">
-				<a href="/Anori.Parameters/api/Anori.ParameterObservers.Reactive">Anori<wbr>.ParameterObservers<wbr>.Reactive</a> <a href="#" class="expand"></a>
-				<ul class="treeview-menu">
-						<li><a href="/Anori.Parameters/api/Anori.ParameterObservers.Reactive.ReferenceTypeObservers">Anori<wbr>.ParameterObservers<wbr>.Reactive<wbr>.<wbr>Reference<wbr>Type<wbr>Observers</a></li>
-			<li><a href="/Anori.Parameters/api/Anori.ParameterObservers.Reactive.ValueTypeObservers">Anori<wbr>.ParameterObservers<wbr>.Reactive<wbr>.ValueTypeObservers</a></li>
-</ul></li></ul></li>			<li><a href="/Anori.Parameters/api/Anori.Parameters">Anori<wbr>.Parameters</a></li>
-</ul></li>      
 
                     </ul>
                             
@@ -161,36 +156,287 @@
 
 
 <section class="content-header">
-	<h1>Anori <small>Namespace</small></h1>
+	<h1>Parameter<wbr>Observer<wbr>Base <small>Class</small></h1>
 </section>
 <section class="content">
 	
 	
-	
+		<h1 id="Summary">Summary</h1>
+	<div class="lead">
+    Property Observer Base.
+    </div>
+
+		<div class="panel panel-default">
+  			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<dl class="dl-horizontal">		
+
+								<dt>Namespace</dt>
+								<dd><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base">Anori<wbr>.ParameterObservers<wbr>.Base</a></dd>
+											
+								<dt>Interfaces</dt>
+								<dd>
+									<ul class="list-unstyled">
+											<li>IDisposable</li>								
+											<li>IEqualityComparer<wbr>&lt;<a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase">Parameter<wbr>Observer<wbr>Base</a>&gt;<wbr></li>								
+											<li>IEquatable<wbr>&lt;<a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase">Parameter<wbr>Observer<wbr>Base</a>&gt;<wbr></li>								
+									</ul>
+								</dd>
+							
+								<dt>Base Types</dt>
+								<dd>
+									<ul class="list-unstyled">										
+											<li>object</li>								
+									</ul>
+								</dd>				
+							
+								<dt>Derived Types</dt>
+								<dd>
+									<ul class="list-unstyled">
+											<li><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase_1">Parameter<wbr>Observer<wbr>Base</a><wbr>&lt;<a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase_1#typeparam-TSelf">TSelf</a>&gt;<wbr></li>								
+									</ul>
+								</dd>			
+							
+						</dl>
+					</div>		
+					<div class="col-md-6">
+						<div class="mermaid">
+							graph BT
+	Type--&gt;Base0["object"]
+	Type-.-&gt;Interface0["IDisposable"]
+	Type-.-&gt;Interface1["IEqualityComparer&lt;ParameterObserverBase&gt;"]
+	Type-.-&gt;Interface2["IEquatable&lt;ParameterObserverBase&gt;"]
+	Type["ParameterObserverBase"]
+class Type type-node
+	Derived0["ParameterObserverBase&lt;TSelf&gt;"]--&gt;Type
+	click Derived0 "/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase_1"
+
+						</div>
+					</div>
+				</div>
+  			</div>
+		</div>
+
+	<h1 id="Syntax">Syntax</h1>
+	<pre><code>public abstract class ParameterObserverBase : IDisposable, 
+    IEqualityComparer&lt;ParameterObserverBase&gt;, IEquatable&lt;ParameterObserverBase&gt;</code></pre>
 
 
-			<h1 id="Namespaces">Namespaces</h1>
+
+
+
+
+
+
+
+
+			<h1 id="Properties">Properties</h1>
 			<div class="box">
 				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover two-cols">
+					<table class="table table-striped table-hover three-cols">
 						<thead>
 							<tr>
-								<th>Namespace</th>
-									<th>Summary</th>
+								<th>Name</th>
+								<th>Value</th>
+								<th>Summary</th>
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers">Anori<wbr>.ParameterObservers</a></td>
-									<td></td>
-							</tr>
-							<tr>
-								<td><a href="/Anori.Parameters/api/Anori.Parameters">Anori<wbr>.Parameters</a></td>
-									<td></td>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/8615A5A4">ExpressionString</a></td>
+								<td>string</td>
+								<td>
+									<div>
+        Gets the expression string.
+    </div>
+								</td>
 							</tr>
 					</tbody></table>
 				</div>
 			</div>
 		
+
+			<h1 id="Methods">Methods</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover three-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Value</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/F2D5B87E">CreateChain<wbr>(IExpressionTree)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+        Creates the chain.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/05A360A8">Dispose<wbr>()<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+        Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/B3C63A1B">Dispose<wbr>(bool)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+        Releases unmanaged and - optionally - managed resources.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/92CEE025">Equals<wbr>(object)<wbr></a></td>
+								<td>bool</td>
+								<td>
+									<div>
+        Determines whether the specified <code class="cs"><a href="/Anori.Parameters">object</a></code>, is equal to this instance.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/09C2C944">Equals<wbr>(<wbr>Parameter<wbr>Observer<wbr>Base)<wbr></a></td>
+								<td>bool</td>
+								<td>
+									<div>
+        Indicates whether the current object is equal to another object of the same type.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/0B8B02D7">Equals<wbr>(<wbr>Parameter<wbr>Observer<wbr>Base, <wbr>Parameter<wbr>Observer<wbr>Base)<wbr></a></td>
+								<td>bool</td>
+								<td>
+									<div>
+        Determines whether the specified objects are equal.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/B2D00F9F">GetHashCode<wbr>()<wbr></a></td>
+								<td>int</td>
+								<td>
+									<div>
+        Returns a hash code for this instance.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/C595E50E">GetHashCode<wbr>(<wbr>Parameter<wbr>Observer<wbr>Base)<wbr></a></td>
+								<td>int</td>
+								<td>
+									<div>
+        Returns a hash code for this instance.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/6040B392">OnAction<wbr>()<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+        The action.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/72BDBCC9">Subscribe<wbr>()<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+        Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+    
+
+        Subscribes this instance.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/6CBC5CCD">Subscribe<wbr>(bool)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+        Subscribes the specified silent.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Parameters/api/Anori.ParameterObservers.Base/ParameterObserverBase/5612A4B7">Unsubscribe<wbr>()<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+        Unsubscribes this instance.
+    </div>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+			<h1 id="Operators">Operators</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover three-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Value</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td>operator !=<wbr>(<wbr>Parameter<wbr>Observer<wbr>Base, <wbr>object)<wbr></td>
+								<td>bool</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
+								<td>operator !=<wbr>(<wbr>Parameter<wbr>Observer<wbr>Base, <wbr>Parameter<wbr>Observer<wbr>Base)<wbr></td>
+								<td>bool</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
+								<td>operator ==<wbr>(<wbr>Parameter<wbr>Observer<wbr>Base, <wbr>object)<wbr></td>
+								<td>bool</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
+								<td>operator ==<wbr>(<wbr>Parameter<wbr>Observer<wbr>Base, <wbr>Parameter<wbr>Observer<wbr>Base)<wbr></td>
+								<td>bool</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+	<h1 id="SeeAlso">See Also</h1>
+	<ul class="list-unstyled">
+			<li><code><a href="/Anori.Parameters">IEqualityComparer&lt;T&gt;</a></code></li>
+			<li><code><a href="/Anori.Parameters">IEquatable&lt;T&gt;</a></code></li>
+			<li>PropertyObserverBase</li>
+			<li><code><a href="/Anori.Parameters">IDisposable</a></code></li>
+			<li>PropertyObserverBase</li>
+	</ul>
+
 	
 </section>
                 
