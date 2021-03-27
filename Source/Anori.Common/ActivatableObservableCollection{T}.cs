@@ -16,7 +16,7 @@ namespace Anori.Common
     /// <typeparam name="T">Activatable Type.</typeparam>
     /// <seealso cref="System.Collections.ObjectModel.ObservableCollection{T}" />
     public class ActivatableObservableCollection<T> : ObservableCollection<T>
-        where T : IActivatable
+        where T : IActivatable?
     {
         /// <summary>
         ///     The is activated.
@@ -72,7 +72,7 @@ namespace Anori.Common
 
             foreach (var item in this.Items)
             {
-                item.Activate();
+                item?.Activate();
             }
 
             this.IsActivated = true;
@@ -90,7 +90,7 @@ namespace Anori.Common
 
             foreach (var item in this.Items)
             {
-                item.Deactivate();
+                item?.Deactivate();
             }
 
             this.IsActivated = false;
