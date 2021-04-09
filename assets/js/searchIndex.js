@@ -39,48 +39,6 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"IActivated",
-            content:"IActivated",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/IActivated',
-            title:"IActivated",
-            description:""
-        }
-    );
-    a(
-        {
-            id:1,
-            title:"ActivatableObservableCollection",
-            content:"ActivatableObservableCollection",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection_1',
-            title:"ActivatableObservableCollection<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:2,
-            title:"ResetLazy",
-            content:"ResetLazy",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
-            title:"ResetLazy<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:3,
             title:"IActivatable",
             content:"IActivatable",
             description:'',
@@ -94,21 +52,21 @@ var searchModule = function() {
     );
     a(
         {
-            id:4,
-            title:"LazyThreadSafetyMode",
-            content:"LazyThreadSafetyMode",
+            id:1,
+            title:"IActivated",
+            content:"IActivated",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/LazyThreadSafetyMode',
-            title:"LazyThreadSafetyMode",
+            url:'/Anori.Common/api/Anori.Common/IActivated',
+            title:"IActivated",
             description:""
         }
     );
     a(
         {
-            id:5,
+            id:2,
             title:"ActivatableObservableCollection",
             content:"ActivatableObservableCollection",
             description:'',
@@ -122,7 +80,35 @@ var searchModule = function() {
     );
     a(
         {
-            id:6,
+            id:3,
+            title:"LazyThreadSafetyMode",
+            content:"LazyThreadSafetyMode",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/LazyThreadSafetyMode',
+            title:"LazyThreadSafetyMode",
+            description:""
+        }
+    );
+    a(
+        {
+            id:4,
+            title:"ResetLazy",
+            content:"ResetLazy",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
+            title:"ResetLazy<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:5,
             title:"IActivatable",
             content:"IActivatable",
             description:'',
@@ -131,6 +117,20 @@ var searchModule = function() {
         {
             url:'/Anori.Common/api/Anori.Common/IActivatable',
             title:"IActivatable",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
+            title:"ActivatableObservableCollection",
+            content:"ActivatableObservableCollection",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection_1',
+            title:"ActivatableObservableCollection<T>",
             description:""
         }
     );
