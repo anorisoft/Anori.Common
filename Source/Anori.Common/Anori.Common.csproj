@@ -7,7 +7,7 @@
     <AssemblyOriginatorKeyFile>..\Anorisoft.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
     <PackageIcon>Anorisoft.png</PackageIcon>
-    <Description>AnoriSoft Extensions</Description>
+    <Description>AnoriSoft Common Functionalities</Description>
     <Company>AnoriSoft</Company>
     <Authors>Martin Egli</Authors>
     <PackageTags>Extensions</PackageTags>
@@ -17,17 +17,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>Anori.Extensions.xml</DocumentationFile>
+    <DocumentationFile>Anori.Common.xml</DocumentationFile>
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>Anori.Extensions.xml</DocumentationFile>
+    <DocumentationFile>Anori.Common.xml</DocumentationFile>
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Submodules|AnyCPU'">
-    <DocumentationFile>Anori.Extensions.xml</DocumentationFile>
+    <DocumentationFile>Anori.Common.xml</DocumentationFile>
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
@@ -53,7 +53,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="($(Configuration.Contains('Submodules')))">
-    <ProjectReference Include="$(SolutionDir)..\Submodules\Anori.Common\Source\Anori.Extensions\Anori.Extensions.csproj" />
+    <ProjectReference Include="$(SolutionDir)..\Submodules\Anori.Extensions\Source\Anori.Extensions\Anori.Extensions.csproj" />
   </ItemGroup>
 
 </Project>
