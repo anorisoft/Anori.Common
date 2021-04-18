@@ -76,27 +76,6 @@
             <param name="index">The zero-based index of the element to replace.</param>
             <param name="item">The new value for the element at the specified index.</param>
         </member>
-        <member name="T:Anori.Common.EventArgs`1">
-            <summary>
-            Generic Event Args.
-            </summary>
-            <typeparam name="T">Payload Type.</typeparam>
-            <seealso cref="T:System.EventArgs" />
-        </member>
-        <member name="M:Anori.Common.EventArgs`1.#ctor(`0)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Anori.Common.EventArgs`1"/> class.
-            </summary>
-            <param name="value">The value.</param>
-        </member>
-        <member name="P:Anori.Common.EventArgs`1.Value">
-            <summary>
-            Gets the value.
-            </summary>
-            <value>
-            The value.
-            </value>
-        </member>
         <member name="T:Anori.Common.IActivatable">
             <summary>
                 Activatable Interface.
