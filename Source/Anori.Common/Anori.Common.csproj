@@ -53,7 +53,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="($(Configuration.Contains('Submodules')))">
-    <ProjectReference Include="$(SolutionDir)..\Submodules\Anori.Common\Source\Anori.Extensions\Anori.Extensions.csproj" />
+    <ProjectReference Include="$(SolutionDir)..\Submodules\Anori.Extensions\Source\Anori.Extensions\Anori.Extensions.csproj" />
   </ItemGroup>
 
 </Project>
