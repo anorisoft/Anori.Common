@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Anori.Common/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Anori.Common/assets/img/favicon.ico" type="image/x-icon">
-        <title>Anori.Common - API - MultibleDeferrer.MultibleDeferrer(Action, Action) Constructor</title>
+        <title>Anori.Common - API - MultipleDeferrer.Create() Method</title>
         <link href="/Anori.Common/assets/css/highlight.css" rel="stylesheet">
         <link href="/Anori.Common/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/Anori.Common/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -73,7 +73,6 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Parameters">Parameters</a></p>
 <p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
 </div>
@@ -134,14 +133,14 @@
                     <ul class="sidebar-menu">
                         
 			<li class="header">Namespace</li>
-		<li><a href="/Anori.Common/api/Anori.Common.Deferrers">Anori<wbr>.Common<wbr>.Deferrers</a></li>
+		<li><a href="/Anori.Common/api/Anori.Deferrers">Anori<wbr>.Deferrers</a></li>
 		<li class="header">Type</li>
-		<li><a href="/Anori.Common/api/Anori.Common.Deferrers/MultibleDeferrer">MultibleDeferrer</a></li>
+		<li><a href="/Anori.Common/api/Anori.Deferrers/MultipleDeferrer">MultipleDeferrer</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Constructors</li>
-				<li class="selected"><a href="/Anori.Common/api/Anori.Common.Deferrers/MultibleDeferrer/A1CD4295">MultibleDeferrer<wbr>(Action, <wbr>Action)<wbr></a></li>
+				<li><a href="/Anori.Common/api/Anori.Deferrers/MultipleDeferrer/C581A5F3">MultipleDeferrer<wbr>(Action, <wbr>Action)<wbr></a></li>
 			<li class="header">Method Members</li>
-				<li><a href="/Anori.Common/api/Anori.Common.Deferrers/MultibleDeferrer/5B048305">Create<wbr>()<wbr></a></li>
+				<li class="selected"><a href="/Anori.Common/api/Anori.Deferrers/MultipleDeferrer/81E331CA">Create<wbr>()<wbr></a></li>
 
 
                     </ul>
@@ -156,15 +155,15 @@
 
 
 <section class="content-header">
-			<h3><a href="/Anori.Common/api/Anori.Common.Deferrers/MultibleDeferrer">MultibleDeferrer</a>.</h3>
-	<h1>MultibleDeferrer<wbr>(Action, <wbr>Action)<wbr> <small>Constructor</small></h1>
+			<h3><a href="/Anori.Common/api/Anori.Deferrers/MultipleDeferrer">MultipleDeferrer</a>.</h3>
+	<h1>Create<wbr>()<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-        Initializes a new instance of the <code class="cs"><a href="/Anori.Common/api/Anori.Common.Deferrers/MultibleDeferrer">MultibleDeferrer</a></code> class.
+        Creates this instance.
     </div>
 
 		<div class="panel panel-default">
@@ -172,46 +171,22 @@
 				<dl class="dl-horizontal">	
 						
 						<dt>Namespace</dt>
-						<dd><a href="/Anori.Common/api/Anori.Common.Deferrers">Anori<wbr>.Common<wbr>.Deferrers</a></dd>
+						<dd><a href="/Anori.Common/api/Anori.Deferrers">Anori<wbr>.Deferrers</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/Anori.Common/api/Anori.Common.Deferrers/MultibleDeferrer">MultibleDeferrer</a></dd>		
+						<dd><a href="/Anori.Common/api/Anori.Deferrers/MultipleDeferrer">MultipleDeferrer</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public MultibleDeferrer(Action catch, Action release)</code></pre>
+	<pre><code>public IDisposable Create()</code></pre>
 
 
 
 
 
-	<h1 id="Parameters">Parameters</h1>
-	<div class="box">
-		<div class="box-body no-padding table-responsive">
-			<table class="table table-striped table-hover three-cols">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-					<tbody><tr>
-						<td>catch</td>
-						<td>Action</td>
-						<td>The catch.</td>
-					</tr>
-					<tr>
-						<td>release</td>
-						<td>Action</td>
-						<td>The release.</td>
-					</tr>
-			</tbody></table>
-		</div>
-	</div>	
 
 	<h1 id="ReturnValue">Return Value</h1>
 	<div class="box">
@@ -224,8 +199,8 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>void</td>
-					<td></td>
+					<td>IDisposable</td>
+					<td>Create new Disposable.</td>
 				</tr>
 			</tbody></table>
 		</div>
