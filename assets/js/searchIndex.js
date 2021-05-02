@@ -39,42 +39,42 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"ActivatableObservableCollection",
-            content:"ActivatableObservableCollection",
+            title:"UpdateableMultibleDeferrer",
+            content:"UpdateableMultibleDeferrer",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection',
-            title:"ActivatableObservableCollection",
+            url:'/Anori.Common/api/Anori.ExpressionObservers/UpdateableMultibleDeferrer',
+            title:"UpdateableMultibleDeferrer",
             description:""
         }
     );
     a(
         {
             id:1,
-            title:"IActivated",
-            content:"IActivated",
+            title:"Deferrer",
+            content:"Deferrer",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/IActivated',
-            title:"IActivated",
+            url:'/Anori.Common/api/Anori.ExpressionObservers/Deferrer',
+            title:"Deferrer",
             description:""
         }
     );
     a(
         {
             id:2,
-            title:"LazyThreadSafetyMode",
-            content:"LazyThreadSafetyMode",
+            title:"Disposable",
+            content:"Disposable",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/LazyThreadSafetyMode',
-            title:"LazyThreadSafetyMode",
+            url:'/Anori.Common/api/Anori.ExpressionObservers/Disposable',
+            title:"Disposable",
             description:""
         }
     );
@@ -95,20 +95,48 @@ var searchModule = function() {
     a(
         {
             id:4,
-            title:"ActivatableObservableCollection",
-            content:"ActivatableObservableCollection",
+            title:"LazyThreadSafetyMode",
+            content:"LazyThreadSafetyMode",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection_1',
-            title:"ActivatableObservableCollection<T>",
+            url:'/Anori.Common/api/Anori.Common/LazyThreadSafetyMode',
+            title:"LazyThreadSafetyMode",
             description:""
         }
     );
     a(
         {
             id:5,
+            title:"MultibleDeferrer",
+            content:"MultibleDeferrer",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.ExpressionObservers/MultibleDeferrer',
+            title:"MultibleDeferrer",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
+            title:"IActivated",
+            content:"IActivated",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/IActivated',
+            title:"IActivated",
+            description:""
+        }
+    );
+    a(
+        {
+            id:7,
             title:"IActivatable",
             content:"IActivatable",
             description:'',
@@ -122,7 +150,49 @@ var searchModule = function() {
     );
     a(
         {
-            id:6,
+            id:8,
+            title:"ActivatableObservableCollection",
+            content:"ActivatableObservableCollection",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection_1',
+            title:"ActivatableObservableCollection<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:9,
+            title:"DeferState",
+            content:"DeferState",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.ExpressionObservers/DeferState',
+            title:"DeferState",
+            description:""
+        }
+    );
+    a(
+        {
+            id:10,
+            title:"ActivatableObservableCollection",
+            content:"ActivatableObservableCollection",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection',
+            title:"ActivatableObservableCollection",
+            description:""
+        }
+    );
+    a(
+        {
+            id:11,
             title:"IActivatable",
             content:"IActivatable",
             description:'',
