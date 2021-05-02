@@ -4,8 +4,9 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.ExpressionObservers
+namespace Anori.Common.Deferrers
 {
+    using Anori.ExpressionObservers;
     using System;
     using System.Threading;
 
@@ -46,17 +47,17 @@ namespace Anori.ExpressionObservers
         /// <returns>Create new Disposable.</returns>
         public IDisposable Create()
         {
-            if (Interlocked.Increment(ref this.count) == 1)
+            if (Interlocked.Increment(ref count) == 1)
             {
-                this.@catch();
+                @catch();
             }
 
             return new Disposable(
                 () =>
                     {
-                        if (Interlocked.Decrement(ref this.count) == 0)
+                        if (Interlocked.Decrement(ref count) == 0)
                         {
-                            this.release();
+                            release();
                         }
                     });
         }

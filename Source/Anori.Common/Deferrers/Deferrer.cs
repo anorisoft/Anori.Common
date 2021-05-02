@@ -4,14 +4,14 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.ExpressionObservers
+namespace Anori.Common.Deferrers
 {
     using System;
 
     /// <summary>
     ///     Deferrer.
     /// </summary>
-    /// <seealso cref="System.IDisposable" />
+    /// <seealso cref="IDisposable" />
     public readonly struct Deferrer : IDisposable
     {
         /// <summary>
@@ -33,6 +33,6 @@ namespace Anori.ExpressionObservers
         /// <summary>
         ///     Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
-        public void Dispose() => this.release();
+        public void Dispose() => release();
     }
 }

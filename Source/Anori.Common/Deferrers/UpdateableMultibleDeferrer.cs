@@ -4,8 +4,9 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.ExpressionObservers
+namespace Anori.Common.Deferrers
 {
+    using Anori.ExpressionObservers;
     using System;
     using System.Threading;
 
@@ -44,7 +45,7 @@ namespace Anori.ExpressionObservers
         /// <value>
         ///     <c>true</c> if this instance is defer; otherwise, <c>false</c>.
         /// </value>
-        public bool IsDeferred => this.state != DeferState.NotDeferred;
+        public bool IsDeferred => state != DeferState.NotDeferred;
 
         /// <summary>
         ///     Creates this instance.
@@ -52,12 +53,12 @@ namespace Anori.ExpressionObservers
         /// <returns>Create new Disposable.</returns>
         public IDisposable Create()
         {
-            if (Interlocked.Increment(ref this.count) == 1)
+            if (Interlocked.Increment(ref count) == 1)
             {
-                this.state = DeferState.Deferred;
+                state = DeferState.Deferred;
             }
 
-            return new Disposable(this.Decrement);
+            return new Disposable(Decrement);
         }
 
         /// <summary>
@@ -66,17 +67,17 @@ namespace Anori.ExpressionObservers
         /// <returns>Is value updated [True] or defereed [False].</returns>
         public bool Update()
         {
-            switch (this.state)
+            switch (state)
             {
                 case DeferState.Update:
                     return false;
 
                 case DeferState.Deferred:
-                    this.state = DeferState.Update;
+                    state = DeferState.Update;
                     return false;
 
                 default:
-                    this.update();
+                    update();
                     return true;
             }
         }
@@ -86,14 +87,14 @@ namespace Anori.ExpressionObservers
         /// </summary>
         private void Decrement()
         {
-            if (Interlocked.Decrement(ref this.count) == 0)
+            if (Interlocked.Decrement(ref count) == 0)
             {
-                if (this.state == DeferState.Update)
+                if (state == DeferState.Update)
                 {
-                    this.update();
+                    update();
                 }
 
-                this.state = DeferState.NotDeferred;
+                state = DeferState.NotDeferred;
             }
         }
     }
