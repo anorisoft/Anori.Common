@@ -1,19 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="MultibleDeferrer.cs" company="AnoriSoft">
+// <copyright file="MultipleDeferrer.cs" company="AnoriSoft">
 // Copyright (c) AnoriSoft. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.Common.Deferrers
+namespace Anori.Deferrers
 {
-    using Anori.ExpressionObservers;
     using System;
     using System.Threading;
 
+    using Anori.Common;
+
     /// <summary>
-    ///     The Multible Deferrer class.
+    ///     The Multiple Deferrer class.
     /// </summary>
-    public class MultibleDeferrer
+    public class MultipleDeferrer
     {
         /// <summary>
         ///     The release.
@@ -31,11 +32,11 @@ namespace Anori.Common.Deferrers
         private int count;
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="MultibleDeferrer" /> class.
+        ///     Initializes a new instance of the <see cref="MultipleDeferrer" /> class.
         /// </summary>
         /// <param name="catch">The catch.</param>
         /// <param name="release">The release.</param>
-        public MultibleDeferrer(Action @catch, Action release)
+        public MultipleDeferrer(Action @catch, Action release)
         {
             this.@catch = @catch;
             this.release = release;
@@ -47,17 +48,17 @@ namespace Anori.Common.Deferrers
         /// <returns>Create new Disposable.</returns>
         public IDisposable Create()
         {
-            if (Interlocked.Increment(ref count) == 1)
+            if (Interlocked.Increment(ref this.count) == 1)
             {
-                @catch();
+                this.@catch();
             }
 
             return new Disposable(
                 () =>
                     {
-                        if (Interlocked.Decrement(ref count) == 0)
+                        if (Interlocked.Decrement(ref this.count) == 0)
                         {
-                            release();
+                            this.release();
                         }
                     });
         }

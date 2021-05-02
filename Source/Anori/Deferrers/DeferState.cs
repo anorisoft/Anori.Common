@@ -4,7 +4,7 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.Common.Deferrers
+namespace Anori.Deferrers
 {
     /// <summary>
     ///     Defer State.

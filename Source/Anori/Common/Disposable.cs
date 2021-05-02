@@ -1,18 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="Deferrer.cs" company="AnoriSoft">
+// <copyright file="Disposable.cs" company="AnoriSoft">
 // Copyright (c) AnoriSoft. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.Common.Deferrers
+namespace Anori.Common
 {
     using System;
 
     /// <summary>
-    ///     Deferrer.
+    ///     Disposable object.
     /// </summary>
-    /// <seealso cref="IDisposable" />
-    public readonly struct Deferrer : IDisposable
+    /// <seealso cref="System.IDisposable" />
+    public readonly struct Disposable : IDisposable
     {
         /// <summary>
         ///     The release.
@@ -20,19 +20,14 @@ namespace Anori.Common.Deferrers
         private readonly Action release;
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="Deferrer" /> struct.
+        ///     Initializes a new instance of the <see cref="Disposable" /> struct.
         /// </summary>
-        /// <param name="catch">The catch.</param>
         /// <param name="release">The release.</param>
-        public Deferrer(Action @catch, Action release)
-        {
-            @catch();
-            this.release = release;
-        }
+        public Disposable(Action release) => this.release = release;
 
         /// <summary>
         ///     Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
-        public void Dispose() => release();
+        public void Dispose() => this.release();
     }
 }

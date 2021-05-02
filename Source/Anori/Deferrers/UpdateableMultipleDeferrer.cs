@@ -1,19 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="UpdateableMultibleDeferrer.cs" company="AnoriSoft">
+// <copyright file="UpdateableMultipleDeferrer.cs" company="AnoriSoft">
 // Copyright (c) AnoriSoft. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.Common.Deferrers
+namespace Anori.Deferrers
 {
-    using Anori.ExpressionObservers;
     using System;
     using System.Threading;
 
+    using Anori.Common;
+
     /// <summary>
-    ///     The Multible Deferrer class.
+    ///     The Multiple Deferrer class.
     /// </summary>
-    public class UpdateableMultibleDeferrer
+    public class UpdateableMultipleDeferrer
     {
         /// <summary>
         ///     The update.
@@ -31,10 +32,10 @@ namespace Anori.Common.Deferrers
         private DeferState state = DeferState.NotDeferred;
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="UpdateableMultibleDeferrer" /> class.
+        ///     Initializes a new instance of the <see cref="UpdateableMultipleDeferrer" /> class.
         /// </summary>
         /// <param name="update">The update.</param>
-        public UpdateableMultibleDeferrer(Action update)
+        public UpdateableMultipleDeferrer(Action update)
         {
             this.update = update;
         }
@@ -45,7 +46,7 @@ namespace Anori.Common.Deferrers
         /// <value>
         ///     <c>true</c> if this instance is defer; otherwise, <c>false</c>.
         /// </value>
-        public bool IsDeferred => state != DeferState.NotDeferred;
+        public bool IsDeferred => this.state != DeferState.NotDeferred;
 
         /// <summary>
         ///     Creates this instance.
@@ -53,12 +54,12 @@ namespace Anori.Common.Deferrers
         /// <returns>Create new Disposable.</returns>
         public IDisposable Create()
         {
-            if (Interlocked.Increment(ref count) == 1)
+            if (Interlocked.Increment(ref this.count) == 1)
             {
-                state = DeferState.Deferred;
+                this.state = DeferState.Deferred;
             }
 
-            return new Disposable(Decrement);
+            return new Disposable(this.Decrement);
         }
 
         /// <summary>
@@ -67,17 +68,17 @@ namespace Anori.Common.Deferrers
         /// <returns>Is value updated [True] or defereed [False].</returns>
         public bool Update()
         {
-            switch (state)
+            switch (this.state)
             {
                 case DeferState.Update:
                     return false;
 
                 case DeferState.Deferred:
-                    state = DeferState.Update;
+                    this.state = DeferState.Update;
                     return false;
 
                 default:
-                    update();
+                    this.update();
                     return true;
             }
         }
@@ -87,14 +88,14 @@ namespace Anori.Common.Deferrers
         /// </summary>
         private void Decrement()
         {
-            if (Interlocked.Decrement(ref count) == 0)
+            if (Interlocked.Decrement(ref this.count) == 0)
             {
-                if (state == DeferState.Update)
+                if (this.state == DeferState.Update)
                 {
-                    update();
+                    this.update();
                 }
 
-                state = DeferState.NotDeferred;
+                this.state = DeferState.NotDeferred;
             }
         }
     }
