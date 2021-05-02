@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Anori.Common/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Anori.Common/assets/img/favicon.ico" type="image/x-icon">
-        <title>Anori.Common - API - UpdateableMultibleDeferrer.IsDeferred Property</title>
+        <title>Anori.Common - API - UpdateableMultibleDeferrer Class</title>
         <link href="/Anori.Common/assets/css/highlight.css" rel="stylesheet">
         <link href="/Anori.Common/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/Anori.Common/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -73,7 +73,9 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Value">Value</a></p>
+<p><a href="#Constructors">Constructors</a></p>
+<p><a href="#Properties">Properties</a></p>
+<p><a href="#Methods">Methods</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -133,17 +135,15 @@
                     <ul class="sidebar-menu">
                         
 			<li class="header">Namespace</li>
-		<li><a href="/Anori.Common/api/Anori.ExpressionObservers">Anori<wbr>.ExpressionObservers</a></li>
-		<li class="header">Type</li>
-		<li><a href="/Anori.Common/api/Anori.ExpressionObservers/UpdateableMultibleDeferrer">Updateable<wbr>Multible<wbr>Deferrer</a></li>
+		<li><a href="/Anori.Common/api/Anori.Common.Deferrers">Anori<wbr>.Common<wbr>.Deferrers</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Constructors</li>
-				<li><a href="/Anori.Common/api/Anori.ExpressionObservers/UpdateableMultibleDeferrer/39CD315E">Updateable<wbr>Multible<wbr>Deferrer<wbr>(Action)<wbr></a></li>
-			<li class="header">Property Members</li>
-				<li class="selected"><a href="/Anori.Common/api/Anori.ExpressionObservers/UpdateableMultibleDeferrer/C006213A">IsDeferred</a></li>
-			<li class="header">Method Members</li>
-				<li><a href="/Anori.Common/api/Anori.ExpressionObservers/UpdateableMultibleDeferrer/CB2903B1">Create<wbr>()<wbr></a></li>
-				<li><a href="/Anori.Common/api/Anori.ExpressionObservers/UpdateableMultibleDeferrer/48FCF0A6">Update<wbr>()<wbr></a></li>
+			<li class="header">Struct Types</li>
+				<li><a href="/Anori.Common/api/Anori.Common.Deferrers/Deferrer">Deferrer</a></li>
+			<li class="header">Class Types</li>
+				<li><a href="/Anori.Common/api/Anori.Common.Deferrers/MultibleDeferrer">MultibleDeferrer</a></li>
+				<li class="selected"><a href="/Anori.Common/api/Anori.Common.Deferrers/UpdateableMultibleDeferrer">Updateable<wbr>Multible<wbr>Deferrer</a></li>
+			<li class="header">Enum Types</li>
+				<li><a href="/Anori.Common/api/Anori.Common.Deferrers/DeferState">DeferState</a></li>
 
 
                     </ul>
@@ -158,57 +158,140 @@
 
 
 <section class="content-header">
-			<h3><a href="/Anori.Common/api/Anori.ExpressionObservers/UpdateableMultibleDeferrer">Updateable<wbr>Multible<wbr>Deferrer</a>.</h3>
-	<h1>IsDeferred <small>Property</small></h1>
+	<h1>Updateable<wbr>Multible<wbr>Deferrer <small>Class</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-        Gets a value indicating whether this instance is defer.
+        The Multible Deferrer class.
     </div>
 
 		<div class="panel panel-default">
   			<div class="panel-body">
-				<dl class="dl-horizontal">	
-						
-						<dt>Namespace</dt>
-						<dd><a href="/Anori.Common/api/Anori.ExpressionObservers">Anori<wbr>.ExpressionObservers</a></dd>
-					
-						<dt>Containing Type</dt>
-						<dd><a href="/Anori.Common/api/Anori.ExpressionObservers/UpdateableMultibleDeferrer">Updateable<wbr>Multible<wbr>Deferrer</a></dd>		
-					
-				</dl>
+				<div class="row">
+					<div class="col-md-6">
+						<dl class="dl-horizontal">		
+
+								<dt>Namespace</dt>
+								<dd><a href="/Anori.Common/api/Anori.Common.Deferrers">Anori<wbr>.Common<wbr>.Deferrers</a></dd>
+											
+							
+								<dt>Base Types</dt>
+								<dd>
+									<ul class="list-unstyled">										
+											<li>object</li>								
+									</ul>
+								</dd>				
+							
+							
+						</dl>
+					</div>		
+					<div class="col-md-6">
+						<div class="mermaid">
+							graph BT
+	Type--&gt;Base0["object"]
+	Type["UpdateableMultibleDeferrer"]
+class Type type-node
+
+						</div>
+					</div>
+				</div>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public bool IsDeferred { get; }</code></pre>
+	<pre><code>public class UpdateableMultibleDeferrer</code></pre>
 
 
 
 
 
-	<h1 id="Value">Value</h1>
-	<div class="box">
-		<div class="box-body no-padding table-responsive">
-			<table class="table table-striped table-hover two-cols">
-				<thead>
-					<tr>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody><tr>
-					<td>bool</td>
-					<td>
-        <code class="cs">true</code> if this instance is defer; otherwise, <code class="cs">false</code>.
+
+
+			<h1 id="Constructors">Constructors</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover two-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+									<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/Anori.Common/api/Anori.Common.Deferrers/UpdateableMultibleDeferrer/C795EE2A">Updateable<wbr>Multible<wbr>Deferrer<wbr>(Action)<wbr></a></td>
+									<td>
+        Initializes a new instance of the <code class="cs"><a href="/Anori.Common/api/Anori.Common.Deferrers/UpdateableMultibleDeferrer">UpdateableMultibleDeferrer</a></code> class.
     </td>
-				</tr>
-			</tbody></table>
-		</div>
-	</div>	
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+
+
+			<h1 id="Properties">Properties</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover three-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Value</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/Anori.Common/api/Anori.Common.Deferrers/UpdateableMultibleDeferrer/C232C553">IsDeferred</a></td>
+								<td>bool</td>
+								<td>
+									<div>
+        Gets a value indicating whether this instance is defer.
+    </div>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+			<h1 id="Methods">Methods</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover three-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Value</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/Anori.Common/api/Anori.Common.Deferrers/UpdateableMultibleDeferrer/E2772CF3">Create<wbr>()<wbr></a></td>
+								<td>IDisposable</td>
+								<td>
+									<div>
+        Creates this instance.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Anori.Common/api/Anori.Common.Deferrers/UpdateableMultibleDeferrer/61A2DFE4">Update<wbr>()<wbr></a></td>
+								<td>bool</td>
+								<td>
+									<div>
+        Updates this instance.
+    </div>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
 
 
 	
