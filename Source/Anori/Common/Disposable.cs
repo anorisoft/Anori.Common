@@ -4,10 +4,14 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.ExpressionObservers
+namespace Anori.Common
 {
     using System;
 
+    /// <summary>
+    ///     Disposable object.
+    /// </summary>
+    /// <seealso cref="System.IDisposable" />
     public readonly struct Disposable : IDisposable
     {
         /// <summary>
@@ -18,7 +22,6 @@ namespace Anori.ExpressionObservers
         /// <summary>
         ///     Initializes a new instance of the <see cref="Disposable" /> struct.
         /// </summary>
-        /// <param name="catch">The catch.</param>
         /// <param name="release">The release.</param>
         public Disposable(Action release) => this.release = release;
 

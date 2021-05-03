@@ -1,18 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="MultibleDeferrer.cs" company="AnoriSoft">
+// <copyright file="MultipleDeferrer.cs" company="AnoriSoft">
 // Copyright (c) AnoriSoft. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.ExpressionObservers
+namespace Anori.Deferrers
 {
     using System;
     using System.Threading;
 
+    using Anori.Common;
+
     /// <summary>
-    ///     The Multible Deferrer class.
+    ///     The Multiple Deferrer class.
     /// </summary>
-    public class MultibleDeferrer
+    public class MultipleDeferrer
     {
         /// <summary>
         ///     The release.
@@ -30,11 +32,11 @@ namespace Anori.ExpressionObservers
         private int count;
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="MultibleDeferrer" /> class.
+        ///     Initializes a new instance of the <see cref="MultipleDeferrer" /> class.
         /// </summary>
         /// <param name="catch">The catch.</param>
         /// <param name="release">The release.</param>
-        public MultibleDeferrer(Action @catch, Action release)
+        public MultipleDeferrer(Action @catch, Action release)
         {
             this.@catch = @catch;
             this.release = release;

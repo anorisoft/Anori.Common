@@ -4,7 +4,7 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.ExpressionObservers
+namespace Anori.Deferrers
 {
     /// <summary>
     ///     Defer State.

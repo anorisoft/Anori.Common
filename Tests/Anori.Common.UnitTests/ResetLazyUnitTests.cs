@@ -6,11 +6,6 @@
 
 namespace Anori.Common.UnitTests
 {
-    using System;
-    using System.Collections.Generic;
-
-    using Microsoft.CodeAnalysis.VisualBasic;
-
     using NUnit.Framework;
 
     public class ResetLazyUnitTests
@@ -49,7 +44,6 @@ namespace Anori.Common.UnitTests
             actual = lazy.Value;
             Assert.AreEqual(2, actual);
         }
-
 
         [Test]
         public void ResetLazy_Load_Value_Return0()

@@ -1,18 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="UpdateableMultibleDeferrer.cs" company="AnoriSoft">
+// <copyright file="UpdateableMultipleDeferrer.cs" company="AnoriSoft">
 // Copyright (c) AnoriSoft. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.ExpressionObservers
+namespace Anori.Deferrers
 {
     using System;
     using System.Threading;
 
+    using Anori.Common;
+
     /// <summary>
-    ///     The Multible Deferrer class.
+    ///     The Multiple Deferrer class.
     /// </summary>
-    public class UpdateableMultibleDeferrer
+    public class UpdateableMultipleDeferrer
     {
         /// <summary>
         ///     The update.
@@ -30,10 +32,10 @@ namespace Anori.ExpressionObservers
         private DeferState state = DeferState.NotDeferred;
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="UpdateableMultibleDeferrer" /> class.
+        ///     Initializes a new instance of the <see cref="UpdateableMultipleDeferrer" /> class.
         /// </summary>
         /// <param name="update">The update.</param>
-        public UpdateableMultibleDeferrer(Action update)
+        public UpdateableMultipleDeferrer(Action update)
         {
             this.update = update;
         }

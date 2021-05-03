@@ -4,14 +4,14 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Anori.ExpressionObservers
+namespace Anori.Deferrers
 {
     using System;
 
     /// <summary>
     ///     Deferrer.
     /// </summary>
-    /// <seealso cref="System.IDisposable" />
+    /// <seealso cref="IDisposable" />
     public readonly struct Deferrer : IDisposable
     {
         /// <summary>
