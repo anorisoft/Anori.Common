@@ -39,48 +39,20 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"UpdateableMultipleDeferrer",
-            content:"UpdateableMultipleDeferrer",
+            title:"LazyThreadSafetyMode",
+            content:"LazyThreadSafetyMode",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Deferrers/UpdateableMultipleDeferrer',
-            title:"UpdateableMultipleDeferrer",
+            url:'/Anori.Common/api/Anori.Common/LazyThreadSafetyMode',
+            title:"LazyThreadSafetyMode",
             description:""
         }
     );
     a(
         {
             id:1,
-            title:"ActivatableObservableCollection",
-            content:"ActivatableObservableCollection",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection',
-            title:"ActivatableObservableCollection",
-            description:""
-        }
-    );
-    a(
-        {
-            id:2,
-            title:"IActivatable",
-            content:"IActivatable",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/IActivatable_1',
-            title:"IActivatable<TSelf>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:3,
             title:"MultipleDeferrer",
             content:"MultipleDeferrer",
             description:'',
@@ -89,6 +61,34 @@ var searchModule = function() {
         {
             url:'/Anori.Common/api/Anori.Deferrers/MultipleDeferrer',
             title:"MultipleDeferrer",
+            description:""
+        }
+    );
+    a(
+        {
+            id:2,
+            title:"ResetLazy",
+            content:"ResetLazy",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
+            title:"ResetLazy<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:3,
+            title:"Disposable",
+            content:"Disposable",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/Disposable',
+            title:"Disposable",
             description:""
         }
     );
@@ -109,28 +109,28 @@ var searchModule = function() {
     a(
         {
             id:5,
-            title:"ResetLazy",
-            content:"ResetLazy",
+            title:"ActivatableObservableCollection",
+            content:"ActivatableObservableCollection",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
-            title:"ResetLazy<T>",
+            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection_1',
+            title:"ActivatableObservableCollection<T>",
             description:""
         }
     );
     a(
         {
             id:6,
-            title:"Disposable",
-            content:"Disposable",
+            title:"UpdateableMultipleDeferrer",
+            content:"UpdateableMultipleDeferrer",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/Disposable',
-            title:"Disposable",
+            url:'/Anori.Common/api/Anori.Deferrers/UpdateableMultipleDeferrer',
+            title:"UpdateableMultipleDeferrer",
             description:""
         }
     );
@@ -151,34 +151,6 @@ var searchModule = function() {
     a(
         {
             id:8,
-            title:"DeferState",
-            content:"DeferState",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Deferrers/DeferState',
-            title:"DeferState",
-            description:""
-        }
-    );
-    a(
-        {
-            id:9,
-            title:"ActivatableObservableCollection",
-            content:"ActivatableObservableCollection",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection_1',
-            title:"ActivatableObservableCollection<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:10,
             title:"Deferrer",
             content:"Deferrer",
             description:'',
@@ -192,15 +164,43 @@ var searchModule = function() {
     );
     a(
         {
-            id:11,
-            title:"LazyThreadSafetyMode",
-            content:"LazyThreadSafetyMode",
+            id:9,
+            title:"IActivatable",
+            content:"IActivatable",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/LazyThreadSafetyMode',
-            title:"LazyThreadSafetyMode",
+            url:'/Anori.Common/api/Anori.Common/IActivatable_1',
+            title:"IActivatable<TSelf>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:10,
+            title:"ActivatableObservableCollection",
+            content:"ActivatableObservableCollection",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection',
+            title:"ActivatableObservableCollection",
+            description:""
+        }
+    );
+    a(
+        {
+            id:11,
+            title:"DeferState",
+            content:"DeferState",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Deferrers/DeferState',
+            title:"DeferState",
             description:""
         }
     );
