@@ -1,204 +1,238 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Anori.Extensions</name>
+        <name>Anori.Common</name>
     </assembly>
     <members>
-        <member name="T:Anori.Extensions.EnumerableExtensions">
+        <member name="T:Anori.Common.ActivatableObservableCollection">
             <summary>
-                Enumerable Extensions.
+            Activatable Observable Collection.
+            </summary>
+            <seealso cref="T:Anori.Common.ActivatableObservableCollection`1" />
+        </member>
+        <member name="T:Anori.Common.ActivatableObservableCollection`1">
+            <summary>
+            Activatable Observable Collection.
+            </summary>
+            <typeparam name="T">Activatable Type.</typeparam>
+            <seealso cref="T:System.Collections.ObjectModel.ObservableCollection`1" />
+        </member>
+        <member name="F:Anori.Common.ActivatableObservableCollection`1.isActivated">
+            <summary>
+                The is activated.
             </summary>
         </member>
-        <member name="M:Anori.Extensions.EnumerableExtensions.ValueAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+        <member name="M:Anori.Common.ActivatableObservableCollection`1.#ctor">
             <summary>
-                Values at or null.
-            </summary>
-            <typeparam name="TSource">The type of the source.</typeparam>
-            <param name="source">The source.</param>
-            <param name="index">The index.</param>
-            <returns>
-                The value or null.
-            </returns>
-            <exception cref="T:System.ArgumentNullException">Source is null.</exception>
-        </member>
-        <member name="M:Anori.Extensions.EnumerableExtensions.ReferenceAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
-            <summary>
-                References at or null.
-            </summary>
-            <typeparam name="TSource">The type of the source.</typeparam>
-            <param name="source">The source.</param>
-            <param name="index">The index.</param>
-            <returns>
-                The value or null.
-            </returns>
-            <exception cref="T:System.ArgumentNullException">source is null.</exception>
-        </member>
-        <member name="T:Anori.Extensions.ListExtensions">
-            <summary>
-                List Extensions.
+                Initializes a new instance of the <see cref="T:Anori.Common.ActivatableObservableCollection`1" /> class.
             </summary>
         </member>
-        <member name="M:Anori.Extensions.ListExtensions.ValueAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
+        <member name="M:Anori.Common.ActivatableObservableCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
             <summary>
-                Values at or null.
+                Initializes a new instance of the <see cref="T:Anori.Common.ActivatableObservableCollection`1" /> class.
             </summary>
-            <typeparam name="TSource">The type of the source.</typeparam>
-            <param name="source">The source.</param>
-            <param name="index">The index.</param>
-            <returns>The value or null.</returns>
-            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+            <param name="collection">The collection from which the tree are copied.</param>
         </member>
-        <member name="M:Anori.Extensions.ListExtensions.ReferenceAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
+        <member name="P:Anori.Common.ActivatableObservableCollection`1.IsActivated">
             <summary>
-                References at or null.
+                Gets a value indicating whether this instance is activated.
             </summary>
-            <typeparam name="TSource">The type of the source.</typeparam>
-            <param name="source">The source.</param>
-            <param name="index">The index.</param>
-            <returns>
-                The value or null.
-            </returns>
-            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+            <value>
+                <c>true</c> if this instance is activated; otherwise, <c>false</c>.
+            </value>
         </member>
-        <member name="T:Anori.Extensions.ReferenceTypeExtensions">
+        <member name="M:Anori.Common.ActivatableObservableCollection`1.Activate">
             <summary>
-                Reference Type Extensions.
+                Activates this instance.
             </summary>
         </member>
-        <member name="M:Anori.Extensions.ReferenceTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+        <member name="M:Anori.Common.ActivatableObservableCollection`1.Deactivate">
             <summary>
-                Elements at or null.
-            </summary>
-            <typeparam name="TSource">The type of the source.</typeparam>
-            <param name="source">The source.</param>
-            <param name="index">The index.</param>
-            <returns>
-                Result of ElementAtOrNull as TSource.
-            </returns>
-            <exception cref="T:System.ArgumentNullException">source is null.</exception>
-        </member>
-        <member name="M:Anori.Extensions.ReferenceTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
-            <summary>
-            Elements at or null.
-            </summary>
-            <typeparam name="TSource">The type of the source.</typeparam>
-            <param name="source">The source.</param>
-            <param name="index">The index.</param>
-            <returns>
-            Result of ElementAtOrNull as TSource.
-            </returns>
-            <exception cref="T:System.ArgumentNullException">source is null.</exception>
-        </member>
-        <member name="M:Anori.Extensions.ReferenceTypeExtensions.GetValueOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
-            <summary>
-            Gets the value or null.
-            </summary>
-            <typeparam name="TKey">The type of the key.</typeparam>
-            <typeparam name="TResult">The type of the value.</typeparam>
-            <param name="dictionary">The dictionary.</param>
-            <param name="key">The key.</param>
-            <returns>
-            Result of GetValueOrNull as TResult.
-            </returns>
-            <exception cref="T:System.ArgumentNullException">dictionary is null.</exception>
-        </member>
-        <member name="M:Anori.Extensions.ReferenceTypeExtensions.CurrentFromEnumerator``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
-            <summary>
-                Currents from enumerator.
-            </summary>
-            <typeparam name="TSource">The type of the source.</typeparam>
-            <param name="source">The source.</param>
-            <param name="index">The index.</param>
-            <returns>
-                Result of CurrentFromEnumerator as Nullable&lt;TSource&gt;.
-            </returns>
-        </member>
-        <member name="T:Anori.Extensions.TypeExtensions">
-            <summary>
-            Type Extensions.
+                Deactivates this instance.
             </summary>
         </member>
-        <member name="M:Anori.Extensions.TypeExtensions.IsNullable(System.Reflection.TypeInfo)">
+        <member name="M:Anori.Common.ActivatableObservableCollection`1.ClearItems">
             <summary>
-                Determines whether this instance is nullable.
-            </summary>
-            <param name="genericTypeInfo">The generic type information.</param>
-            <returns>
-                <c>true</c> if the specified generic type information is nullable; otherwise, <c>false</c>.
-            </returns>
-            <exception cref="T:System.ArgumentNullException">genericTypeInfo is null.</exception>
-        </member>
-        <member name="M:Anori.Extensions.TypeExtensions.IsNullable(System.Type)">
-            <summary>
-                Determines whether this instance is nullable.
-            </summary>
-            <param name="type">The type.</param>
-            <returns>
-                <c>true</c> if the specified type is nullable; otherwise, <c>false</c>.
-            </returns>
-            <exception cref="T:System.ArgumentNullException">type is null.</exception>
-        </member>
-        <member name="M:Anori.Extensions.TypeExtensions.IsNullable``1">
-            <summary>
-                Determines whether this instance is nullable.
-            </summary>
-            <typeparam name="T">Type.</typeparam>
-            <returns>
-                <c>true</c> if this instance is nullable; otherwise, <c>false</c>.
-            </returns>
-        </member>
-        <member name="T:Anori.Extensions.ValueTypeExtensions">
-            <summary>
-                ValueType Extensions.
+                Removes all items from the collection.
             </summary>
         </member>
-        <member name="M:Anori.Extensions.ValueTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+        <member name="M:Anori.Common.ActivatableObservableCollection`1.InsertItem(System.Int32,`0)">
             <summary>
-            Elements at or null.
+            Inserts an item into the collection at the specified index.
             </summary>
-            <typeparam name="TSource">The type of the source.</typeparam>
-            <param name="source">The source.</param>
-            <param name="index">The index.</param>
-            <returns>
-            Result of ElementAtOrNull as Nullable{TSource}.
-            </returns>
-            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+            <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
+            <param name="item">The object to insert.</param>
         </member>
-        <member name="M:Anori.Extensions.ValueTypeExtensions.ElementAtOrNull``1(System.Collections.Generic.IList{``0},System.Int32)">
+        <member name="M:Anori.Common.ActivatableObservableCollection`1.RemoveItem(System.Int32)">
             <summary>
-                Get element at index or is no element return null.
+                Removes the item at the specified index of the collection.
             </summary>
-            <typeparam name="TSource">The type of the source.</typeparam>
-            <param name="source">The source.</param>
-            <param name="index">The index.</param>
-            <returns>
-                Result of ElementAtOrNull as Nullable{TSource}.
-            </returns>
-            <exception cref="T:System.ArgumentNullException">source is null.</exception>
+            <param name="index">The zero-based index of the element to remove.</param>
         </member>
-        <member name="M:Anori.Extensions.ValueTypeExtensions.GetValueOrNull``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
+        <member name="M:Anori.Common.ActivatableObservableCollection`1.SetItem(System.Int32,`0)">
             <summary>
-            Gets the value or null.
+            Replaces the element at the specified index.
             </summary>
-            <typeparam name="TKey">The type of the key.</typeparam>
-            <typeparam name="TResult">The type of the value.</typeparam>
-            <param name="dictionary">The dictionary.</param>
-            <param name="key">The key.</param>
-            <returns>
-            Result of GetValueOrNull as Nullable{TResult};.
-            </returns>
-            <exception cref="T:System.ArgumentNullException">dictionary is null.</exception>
+            <param name="index">The zero-based index of the element to replace.</param>
+            <param name="item">The new value for the element at the specified index.</param>
         </member>
-        <member name="M:Anori.Extensions.ValueTypeExtensions.CurrentFromEnumerator``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+        <member name="T:Anori.Common.IActivatable">
             <summary>
-                Currents from enumerator.
+                Activatable Interface.
             </summary>
-            <typeparam name="TSource">The type of the source.</typeparam>
-            <param name="source">The source.</param>
-            <param name="index">The index.</param>
-            <returns>
-                Result of CurrentFromEnumerator as Nullable&lt;TSource&gt;.
-            </returns>
+        </member>
+        <member name="M:Anori.Common.IActivatable.Activate">
+            <summary>
+                Activates this instance.
+            </summary>
+        </member>
+        <member name="M:Anori.Common.IActivatable.Deactivate">
+            <summary>
+                Deactivates this instance.
+            </summary>
+        </member>
+        <member name="T:Anori.Common.IActivatable`1">
+            <summary>
+                Activatable Interface.
+            </summary>
+            <typeparam name="TSelf">The type of the self.</typeparam>
+            <seealso cref="T:Anori.Common.IActivated" />
+        </member>
+        <member name="M:Anori.Common.IActivatable`1.Activate">
+            <summary>
+                Activates this instance.
+            </summary>
+            <returns>The Self.</returns>
+        </member>
+        <member name="M:Anori.Common.IActivatable`1.Deactivate">
+            <summary>
+                Deactivates this instance.
+            </summary>
+            <returns>The Self.</returns>
+        </member>
+        <member name="T:Anori.Common.IActivated">
+            <summary>
+                Activated Interface.
+            </summary>
+        </member>
+        <member name="E:Anori.Common.IActivated.IsActiveChanged">
+            <summary>
+                Occurs when [is active changed].
+            </summary>
+        </member>
+        <member name="P:Anori.Common.IActivated.IsActive">
+            <summary>
+                Gets a value indicating whether the object is active.
+            </summary>
+            <value><see langword="true" /> if the object is active; otherwise <see langword="false" />.</value>
+        </member>
+        <member name="T:Anori.Common.LazyThreadSafetyMode">
+            <summary>
+            Specifies how a System.Lazy`1 instance synchronizes access among multiple threads.
+            </summary>
+        </member>
+        <member name="F:Anori.Common.LazyThreadSafetyMode.PublicationOnly">
+            <summary>
+                When multiple threads try to initialize a System.Lazy`1 instance simultaneously,
+                all threads are allowed to run the initialization method (or the default constructor,
+                if there is no initialization method). The first thread to complete initialization
+                sets the value of the System.Lazy`1 instance. That value is returned to any other
+                threads that were simultaneously running the initialization method, unless the
+                initialization method throws exceptions on those threads. Any instances of T
+                that were created by the competing threads are discarded. If the initialization
+                method throws an exception on any thread, the exception is propagated out of
+                the System.Lazy`1.Value property on that thread. The exception is not cached.
+                The value of the System.Lazy`1.IsValueCreated property remains false, and subsequent
+                calls to the System.Lazy`1.Value property, either by the thread where the exception
+                was thrown or by other threads, cause the initialization method to run again.
+                If the initialization method recursively accesses the System.Lazy`1.Value property
+                of the System.Lazy`1 instance, no exception is thrown.
+            </summary>
+        </member>
+        <member name="T:Anori.Common.ResetLazy`1">
+            <summary>
+                ResetLazy.
+            </summary>
+            <typeparam name="T">The type.</typeparam>
+        </member>
+        <member name="F:Anori.Common.ResetLazy`1.mode">
+            <summary>
+                The mode.
+            </summary>
+        </member>
+        <member name="F:Anori.Common.ResetLazy`1.box">
+            <summary>
+                The box.
+            </summary>
+        </member>
+        <member name="F:Anori.Common.ResetLazy`1.syncLock">
+            <summary>
+                The synchronize lock.
+            </summary>
+        </member>
+        <member name="F:Anori.Common.ResetLazy`1.valueFactory">
+            <summary>
+                The value factory.
+            </summary>
+        </member>
+        <member name="M:Anori.Common.ResetLazy`1.#ctor(System.Func{`0},Anori.Common.LazyThreadSafetyMode,System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Anori.Common.ResetLazy`1" /> class.
+            </summary>
+            <param name="valueFactory">The value factory.</param>
+            <param name="mode">The mode.</param>
+            <param name="declaringType">Type of the declaring.</param>
+            <exception cref="T:System.ArgumentNullException">valueFactory is null.</exception>
+        </member>
+        <member name="P:Anori.Common.ResetLazy`1.Value">
+            <summary>
+                Gets the boxed value.
+            </summary>
+            <value>
+                The value.
+            </value>
+        </member>
+        <member name="P:Anori.Common.ResetLazy`1.IsValueCreated">
+            <summary>
+                Gets a value indicating whether this instance is value created.
+            </summary>
+            <value>
+                <c>true</c> if this instance is value created; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Anori.Common.ResetLazy`1.DeclaringType">
+            <summary>
+                Gets the type of the declaring.
+            </summary>
+            <value>
+                The type of the declaring.
+            </value>
+        </member>
+        <member name="M:Anori.Common.ResetLazy`1.Load">
+            <summary>
+                Loads this instance.
+            </summary>
+        </member>
+        <member name="M:Anori.Common.ResetLazy`1.Reset">
+            <summary>
+                Resets this instance.
+            </summary>
+        </member>
+        <member name="T:Anori.Common.ResetLazy`1.Box">
+            <summary>
+                The Box.
+            </summary>
+        </member>
+        <member name="F:Anori.Common.ResetLazy`1.Box.Value">
+            <summary>
+                The value.
+            </summary>
+        </member>
+        <member name="M:Anori.Common.ResetLazy`1.Box.#ctor(`0)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Anori.Common.ResetLazy`1.Box" /> class.
+            </summary>
+            <param name="value">The value.</param>
         </member>
     </members>
 </doc>

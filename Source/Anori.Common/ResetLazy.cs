@@ -18,8 +18,7 @@ namespace Anori.Common
     /// </summary>
     /// <typeparam name="T">The type.</typeparam>
     [ComVisible(false)]
-    [HostProtection(Action = SecurityAction.LinkDemand,
-        Resources = HostProtectionResource.Synchronization | HostProtectionResource.SharedState)]
+    [HostProtection(Action = SecurityAction.LinkDemand, Resources = HostProtectionResource.Synchronization | HostProtectionResource.SharedState)]
     public class ResetLazy<T>
     {
         /// <summary>
@@ -93,6 +92,7 @@ namespace Anori.Common
 
                     case LazyThreadSafetyMode.ExecutionAndPublication:
                         {
+                            // ReSharper disable once InconsistentlySynchronizedField
                             var b1 = this.box;
                             if (b1 != null)
                             {

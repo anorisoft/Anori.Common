@@ -1,11 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	
-	
-	
-	<s:Boolean x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=650F74CC4D02E3419C3E5721F30961E1/@KeyIndexDefined">True</s:Boolean>
-	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=650F74CC4D02E3419C3E5721F30961E1/AbsolutePath/@EntryValue">D:\Git\Anori.Extensions\Source\AnoriSoft.DotSettings</s:String>
-	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=650F74CC4D02E3419C3E5721F30961E1/RelativePath/@EntryValue">..\AnoriSoft.DotSettings</s:String>
-	
-	
-	<s:Boolean x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File650F74CC4D02E3419C3E5721F30961E1/@KeyIndexDefined">True</s:Boolean>
-	<s:Double x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File650F74CC4D02E3419C3E5721F30961E1/RelativePriority/@EntryValue">2</s:Double></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=CFC9A4342E1F91408488A83E3CD3F6D2/AbsolutePath/@EntryValue">D:\Git\Anori.ExpressionObservers\Source\AnoriSoft.DotSettings</s:String>
+	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=CFC9A4342E1F91408488A83E3CD3F6D2/RelativePath/@EntryValue">..\..\..\Anori.ExpressionObservers\Source\AnoriSoft.DotSettings</s:String>
+	<s:Boolean x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=CFC9A4342E1F91408488A83E3CD3F6D2/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=FileCFC9A4342E1F91408488A83E3CD3F6D2/@KeyIndexDefined">True</s:Boolean>
+	<s:Double x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=FileCFC9A4342E1F91408488A83E3CD3F6D2/RelativePriority/@EntryValue">1</s:Double></wpf:ResourceDictionary>

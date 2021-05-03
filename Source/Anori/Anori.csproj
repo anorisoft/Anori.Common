@@ -1,4 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>9.0</LangVersion>
@@ -6,38 +7,21 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\Anorisoft.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
-    <PackageIcon>Anorisoft.png</PackageIcon>
     <Description>AnoriSoft Common Functionalities</Description>
     <Company>AnoriSoft</Company>
     <Authors>Martin Egli</Authors>
-    <PackageTags>Extensions</PackageTags>
+    <PackageTags>Common</PackageTags>
     <Copyright>Copyright (c) AnoriSoft</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>Anori.Common.xml</DocumentationFile>
-    <DebugType>portable</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>Anori.Common.xml</DocumentationFile>
-    <DebugType>portable</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Submodules|AnyCPU'">
-    <DocumentationFile>Anori.Common.xml</DocumentationFile>
-    <DebugType>portable</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
+
   <ItemGroup>
-    <None Include="..\Anorisoft.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
     <AdditionalFiles Include="..\stylecop.json" Link="stylecop.json" />
   </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2021.1.0" />
     <PackageReference Include="Microsoft.CodeAnalysis" Version="3.9.0" />
@@ -50,14 +34,6 @@
   </ItemGroup>
   <ItemGroup Condition="!($(Configuration.Contains('Submodules')))">
     <PackageReference Include="Anori.Extensions" Version="1.0.0-alpha0019" />
-  </ItemGroup>
-
-  <ItemGroup Condition="($(Configuration.Contains('Submodules')))">
-    <ProjectReference Include="$(SolutionDir)..\Submodules\Anori.Extensions\Source\Anori.Extensions\Anori.Extensions.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Anori\Anori.csproj" />
   </ItemGroup>
 
 </Project>

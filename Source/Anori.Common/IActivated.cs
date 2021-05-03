@@ -8,6 +8,8 @@ namespace Anori.Common
 {
     using System;
 
+    using Anori.Extensions;
+
     /// <summary>
     ///     Activated Interface.
     /// </summary>

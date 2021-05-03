@@ -1,3 +1,3 @@
 ---------------
-Welcome to Anori.Extensions Dokumentation
+Welcome to Anori.Command Dokumentation
 ===============
