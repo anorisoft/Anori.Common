@@ -149,6 +149,11 @@
                 of the System.Lazy`1 instance, no exception is thrown.
             </summary>
         </member>
+        <member name="F:Anori.Common.LazyThreadSafetyMode.Full">
+            <summary>
+            The full.
+            </summary>
+        </member>
         <member name="T:Anori.Common.ResetLazy`1">
             <summary>
                 ResetLazy.
