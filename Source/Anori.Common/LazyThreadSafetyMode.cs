@@ -65,6 +65,9 @@ namespace Anori.Common
         //     thrown.
         ExecutionAndPublication = 2,
 
+        /// <summary>
+        /// The full.
+        /// </summary>
         Full = 3
     }
 }

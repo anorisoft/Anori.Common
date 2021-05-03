@@ -57,7 +57,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Anori\Anori.csproj" />
+    <ProjectReference Include="..\Anori\Anori.csproj">
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <IncludeAssets>Anori.dll</IncludeAssets>
+    </ProjectReference>
   </ItemGroup>
-
 </Project>
