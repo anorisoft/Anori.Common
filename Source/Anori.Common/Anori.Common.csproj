@@ -15,6 +15,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>Anori.Common.xml</DocumentationFile>
@@ -57,9 +58,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Anori\Anori.csproj">
-      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
-      <IncludeAssets>Anori.dll</IncludeAssets>
-    </ProjectReference>
+    <ProjectReference Include="..\Anori\Anori.csproj" />
+    <Content Include="bin\$(Configuration)\$(TargetFramework)\Anori.dll">
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)</PackagePath>
+    </Content>
   </ItemGroup>
 </Project>
