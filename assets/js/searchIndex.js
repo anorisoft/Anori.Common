@@ -39,104 +39,6 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"Deferrer",
-            content:"Deferrer",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Deferrers/Deferrer',
-            title:"Deferrer",
-            description:""
-        }
-    );
-    a(
-        {
-            id:1,
-            title:"DeferState",
-            content:"DeferState",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Deferrers/DeferState',
-            title:"DeferState",
-            description:""
-        }
-    );
-    a(
-        {
-            id:2,
-            title:"ActivatableObservableCollection",
-            content:"ActivatableObservableCollection",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection',
-            title:"ActivatableObservableCollection",
-            description:""
-        }
-    );
-    a(
-        {
-            id:3,
-            title:"LazyThreadSafetyMode",
-            content:"LazyThreadSafetyMode",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/LazyThreadSafetyMode',
-            title:"LazyThreadSafetyMode",
-            description:""
-        }
-    );
-    a(
-        {
-            id:4,
-            title:"MultipleDeferrer",
-            content:"MultipleDeferrer",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Deferrers/MultipleDeferrer',
-            title:"MultipleDeferrer",
-            description:""
-        }
-    );
-    a(
-        {
-            id:5,
-            title:"UpdateableMultipleDeferrer",
-            content:"UpdateableMultipleDeferrer",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Deferrers/UpdateableMultipleDeferrer',
-            title:"UpdateableMultipleDeferrer",
-            description:""
-        }
-    );
-    a(
-        {
-            id:6,
-            title:"Disposable",
-            content:"Disposable",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/Disposable',
-            title:"Disposable",
-            description:""
-        }
-    );
-    a(
-        {
-            id:7,
             title:"IActivatable",
             content:"IActivatable",
             description:'',
@@ -150,21 +52,77 @@ var searchModule = function() {
     );
     a(
         {
-            id:8,
-            title:"ResetLazy",
-            content:"ResetLazy",
+            id:1,
+            title:"ActivatableObservableCollection",
+            content:"ActivatableObservableCollection",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
-            title:"ResetLazy<T>",
+            url:'/Anori.Common/api/Anori.Common/ActivatableObservableCollection',
+            title:"ActivatableObservableCollection",
             description:""
         }
     );
     a(
         {
-            id:9,
+            id:2,
+            title:"MultipleDeferrer",
+            content:"MultipleDeferrer",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Deferrers/MultipleDeferrer',
+            title:"MultipleDeferrer",
+            description:""
+        }
+    );
+    a(
+        {
+            id:3,
+            title:"DeferState",
+            content:"DeferState",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Deferrers/DeferState',
+            title:"DeferState",
+            description:""
+        }
+    );
+    a(
+        {
+            id:4,
+            title:"Disposable",
+            content:"Disposable",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/Disposable',
+            title:"Disposable",
+            description:""
+        }
+    );
+    a(
+        {
+            id:5,
+            title:"IActivatable",
+            content:"IActivatable",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/IActivatable',
+            title:"IActivatable",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
             title:"IActivated",
             content:"IActivated",
             description:'',
@@ -178,7 +136,7 @@ var searchModule = function() {
     );
     a(
         {
-            id:10,
+            id:7,
             title:"ActivatableObservableCollection",
             content:"ActivatableObservableCollection",
             description:'',
@@ -192,15 +150,57 @@ var searchModule = function() {
     );
     a(
         {
-            id:11,
-            title:"IActivatable",
-            content:"IActivatable",
+            id:8,
+            title:"Deferrer",
+            content:"Deferrer",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/IActivatable',
-            title:"IActivatable",
+            url:'/Anori.Common/api/Anori.Deferrers/Deferrer',
+            title:"Deferrer",
+            description:""
+        }
+    );
+    a(
+        {
+            id:9,
+            title:"LazyThreadSafetyMode",
+            content:"LazyThreadSafetyMode",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/LazyThreadSafetyMode',
+            title:"LazyThreadSafetyMode",
+            description:""
+        }
+    );
+    a(
+        {
+            id:10,
+            title:"UpdateableMultipleDeferrer",
+            content:"UpdateableMultipleDeferrer",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Deferrers/UpdateableMultipleDeferrer',
+            title:"UpdateableMultipleDeferrer",
+            description:""
+        }
+    );
+    a(
+        {
+            id:11,
+            title:"ResetLazy",
+            content:"ResetLazy",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
+            title:"ResetLazy<T>",
             description:""
         }
     );
