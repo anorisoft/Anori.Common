@@ -59,7 +59,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Anori\Anori.csproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <PrivateAssets>All</PrivateAssets>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
     </ProjectReference>
     <!--<Content Include="bin\$(Configuration)\$(TargetFramework)\Anori.dll">
       <Pack>true</Pack>
