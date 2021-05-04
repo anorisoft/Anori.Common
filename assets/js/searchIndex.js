@@ -67,20 +67,6 @@ var searchModule = function() {
     a(
         {
             id:2,
-            title:"MultipleDeferrer",
-            content:"MultipleDeferrer",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Deferrers/MultipleDeferrer',
-            title:"MultipleDeferrer",
-            description:""
-        }
-    );
-    a(
-        {
-            id:3,
             title:"DeferState",
             content:"DeferState",
             description:'',
@@ -94,35 +80,7 @@ var searchModule = function() {
     );
     a(
         {
-            id:4,
-            title:"Disposable",
-            content:"Disposable",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/Disposable',
-            title:"Disposable",
-            description:""
-        }
-    );
-    a(
-        {
-            id:5,
-            title:"IActivatable",
-            content:"IActivatable",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Common/IActivatable',
-            title:"IActivatable",
-            description:""
-        }
-    );
-    a(
-        {
-            id:6,
+            id:3,
             title:"IActivated",
             content:"IActivated",
             description:'',
@@ -131,6 +89,48 @@ var searchModule = function() {
         {
             url:'/Anori.Common/api/Anori.Common/IActivated',
             title:"IActivated",
+            description:""
+        }
+    );
+    a(
+        {
+            id:4,
+            title:"UpdateableMultipleDeferrer",
+            content:"UpdateableMultipleDeferrer",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Deferrers/UpdateableMultipleDeferrer',
+            title:"UpdateableMultipleDeferrer",
+            description:""
+        }
+    );
+    a(
+        {
+            id:5,
+            title:"ResetLazy",
+            content:"ResetLazy",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
+            title:"ResetLazy<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
+            title:"IActivatable",
+            content:"IActivatable",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/IActivatable',
+            title:"IActivatable",
             description:""
         }
     );
@@ -165,6 +165,20 @@ var searchModule = function() {
     a(
         {
             id:9,
+            title:"Disposable",
+            content:"Disposable",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Anori.Common/api/Anori.Common/Disposable',
+            title:"Disposable",
+            description:""
+        }
+    );
+    a(
+        {
+            id:10,
             title:"LazyThreadSafetyMode",
             content:"LazyThreadSafetyMode",
             description:'',
@@ -178,29 +192,15 @@ var searchModule = function() {
     );
     a(
         {
-            id:10,
-            title:"UpdateableMultipleDeferrer",
-            content:"UpdateableMultipleDeferrer",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Anori.Common/api/Anori.Deferrers/UpdateableMultipleDeferrer',
-            title:"UpdateableMultipleDeferrer",
-            description:""
-        }
-    );
-    a(
-        {
             id:11,
-            title:"ResetLazy",
-            content:"ResetLazy",
+            title:"MultipleDeferrer",
+            content:"MultipleDeferrer",
             description:'',
             tags:''
         },
         {
-            url:'/Anori.Common/api/Anori.Common/ResetLazy_1',
-            title:"ResetLazy<T>",
+            url:'/Anori.Common/api/Anori.Deferrers/MultipleDeferrer',
+            title:"MultipleDeferrer",
             description:""
         }
     );
