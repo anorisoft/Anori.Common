@@ -62,13 +62,6 @@
       <PrivateAssets>All</PrivateAssets>
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
     </ProjectReference>
-    <!--<Content Include="bin\$(Configuration)\$(TargetFramework)\Anori.dll">
-      <Pack>true</Pack>
-      <PackagePath>lib\$(TargetFramework)</PackagePath>
-    </Content>-->
-  </ItemGroup>
-
-  <ItemGroup>
     <_PackageFiles Include="$(OutputPath)\Anori.dll">
       <BuildAction>None</BuildAction>
       <PackagePath>lib\$(TargetFramework)</PackagePath>
